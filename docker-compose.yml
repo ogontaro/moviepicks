@@ -1,0 +1,12 @@
+version: '2'
+services:
+  server:
+    build:
+      dockerfile: '../containers/server/Dockerfile'
+      context: './server'
+    container_name: movie-picks_server
+    command: bash -c "bundle exec rails s -b 0.0.0.0"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server/:/home/moviepicks/project/
