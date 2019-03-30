@@ -30,6 +30,10 @@ USER ${USER_NAME}
 WORKDIR ${APP_HOME}
 
 COPY Gemfile* ./
+USER root
+RUN chown ${USER_NAME}:${USER_NAME} Gemfile*
+USER ${USER_NAME}
+
 RUN bundle install --jobs 4
 
 EXPOSE 3000
