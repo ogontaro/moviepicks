@@ -248,3 +248,6 @@ Performance/ReverseEach:
 
 Performance/UnfreezeString:
   Enabled: true
+
+Bundler/OrderedGems:
+  Enabled: true
