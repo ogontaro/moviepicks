@@ -10,3 +10,21 @@ services:
       - "3000:3000"
     volumes:
       - ./server/:/home/moviepicks/project/
+
+  db:
+    image: mysql:5.7
+    container_name: movie-picks_db
+    environment:
+      MYSQL_DATABASE: 'moviepicks_development'
+      MYSQL_USER: 'moviepicks'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./containers/db/my.cnf:/etc/mysql/my.cnf
+      - db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+volumes:
+  db:
