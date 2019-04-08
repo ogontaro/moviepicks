@@ -13,11 +13,11 @@ gem "puma", "~> 3.11"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
-  gem 'dotenv-rails'
+  gem "dotenv-rails"
 end
 
 group :development do
-  gem 'annotate'
+  gem "annotate"
   gem "debase"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "rubocop"
