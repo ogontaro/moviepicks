@@ -6,6 +6,9 @@ services:
       context: './server'
     container_name: movie-picks_server
     command: bash -c "bundle exec rails s -b 0.0.0.0"
+    environment:
+      RAILS_ENV: 'development'
+      TZ: "Asia/Tokyo"
     ports:
       - "3000:3000"
     volumes:
