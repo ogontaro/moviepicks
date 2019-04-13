@@ -1,18 +1,24 @@
 version: 2.1
 orbs:
   ruby-orbs: sue445/ruby-orbs@1.4.3
+
 executors:
   server:
-    working_directory: ~/server
     docker:
       - image: circleci/ruby:2.5.3
+      - image: circleci/mysql:5.7-ram
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
+        environment:
+          MYSQL_ROOT_PASSWORD: 'password'
+    working_directory: ~/project/server
     environment: 
       RAILS_ENV: 'test'
+      DATABASE_HOST: 127.0.0.1
       TZ: "Asia/Tokyo"
   frontend:
-    working_directory: ~/client
     docker:
       - image: circleci/node:8.11.4
+    working_directory: ~/project/client
     environment: 
       TZ: "Asia/Tokyo"
 
@@ -21,8 +27,10 @@ jobs:
     executor: 
       name: server
     steps:
-      - checkout
-      - ruby-orbs/bundle-install
+      - checkout:
+          path: ~/project
+      - ruby-orbs/bundle-install:
+          restore_bundled_with: false
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
       - run: bundle exec rspec
