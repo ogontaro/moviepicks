@@ -1,0 +1,22 @@
+version: 2.1
+executors:
+  server:
+    working_directory: ~/server
+    docker:
+      - image: circleci/ruby:2.5.3
+  frontend:
+    working_directory: ~/client
+    docker:
+      - image: circleci/node:8.11.4
+
+jobs:
+  test_server:
+    executor: 
+      name: server
+    steps:
+      - checkout
+
+workflows:
+  test_and_build:
+    jobs:
+      - test_server
