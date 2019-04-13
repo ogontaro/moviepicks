@@ -16,8 +16,6 @@ services:
     container_name: movie-picks_db
     environment:
       MYSQL_DATABASE: 'moviepicks_development'
-      MYSQL_USER: 'moviepicks'
-      MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
       TZ: "Asia/Tokyo"
     volumes:

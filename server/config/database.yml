@@ -15,7 +15,7 @@ default: &default
   encoding: utf8mb4
   pool: <%= ENV['DATABASE_POOL'] || 5 %>
   host: <%= ENV['DATABASE_HOST'] || 'db' %>
-  username: <%= ENV['DATABASE_USER'] || 'moviepicks' %>
+  username: <%= ENV['DATABASE_USER'] || 'root' %>
   password: <%= ENV['DATABASE_PASSWORD'] || 'password' %>
 
 development:
