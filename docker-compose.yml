@@ -1,10 +1,10 @@
 version: '3'
 services:
-  server:
+  server: &base
     build:
       dockerfile: '../containers/server/Dockerfile'
       context: './server'
-    container_name: movie-picks_server
+    container_name: moviepicks_server
     command: bash -c "bundle exec rails s -b 0.0.0.0"
     environment:
       RAILS_ENV: 'development'
@@ -14,9 +14,16 @@ services:
     volumes:
       - ./server/:/home/moviepicks/project/
 
+  worker:  
+    <<: *base
+    container_name: moviepicks_worker
+    command: bash -c "bundle exec sidekiq"
+    ports:
+      - "3001:3000"
+
   db:
     image: mysql:5.7
-    container_name: movie-picks_db
+    container_name: moviepicks_db
     environment:
       MYSQL_DATABASE: 'moviepicks_development'
       MYSQL_ROOT_PASSWORD: 'password'
@@ -26,6 +33,10 @@ services:
       - db:/var/lib/mysql
     ports:
       - "3306:3306"
+
+  redis:
+    image: redis:5.0.4
+    container_name: moviepicks_redis
 
 volumes:
   db:
