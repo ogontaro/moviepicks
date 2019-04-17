@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe Api::Repository::ChannelRepository do
+describe Api::Repository::ChannelRepository do
   ChannelRepository = Api::Repository::ChannelRepository
 
   describe "all" do
