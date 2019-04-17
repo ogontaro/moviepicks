@@ -33,7 +33,10 @@ jobs:
           restore_bundled_with: false
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
-      - run: bundle exec rspec
+      - run: mkdir ~/rspec
+      - run: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
+      - store_test_results:
+          path: ~/rspec
 
 workflows:
   test_and_build:
