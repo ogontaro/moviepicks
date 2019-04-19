@@ -5,7 +5,7 @@ require "rails_helper"
 describe Api::Repository::ApplicationRepository do
   ApplicationRepository = Api::Repository::ApplicationRepository
 
-  describe "client" do
+  xdescribe "client" do
     it "return youtube client object" do
       expect(ApplicationRepository.client.class).to eq Google::Apis::YoutubeV3::YouTubeService
     end

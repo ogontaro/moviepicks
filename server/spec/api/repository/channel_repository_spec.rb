@@ -8,7 +8,7 @@ describe Api::Repository::ChannelRepository do
   describe "all" do
     let(:channels) { ChannelRepository.all }
 
-    it "return response" do
+    xit "return response" do
       expect(channels.class).to eq Api::Response::ChannelResponse
     end
   end
