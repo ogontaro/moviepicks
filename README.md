@@ -12,7 +12,7 @@ docker-compose up -d
 docker-compose exec server bash -c "bundle exec rails db:migrate"
 ```
 
-### Rspec
+### RSpec
 ```
 docker-compose exec server bash -c "bundle exec rspec"
 ```
