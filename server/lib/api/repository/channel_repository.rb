@@ -5,7 +5,8 @@ module Api
     class ChannelRepository < ApplicationRepository
       class << self
         def all
-          client.list_searches("id,snippet", type: "channel", order: "date", max_results: 50)
+          channels = client.list_searches("snippet", type: "channel", max_results: 50)
+          Api::Response::ChannelResponse.new(channels)
         end
       end
     end

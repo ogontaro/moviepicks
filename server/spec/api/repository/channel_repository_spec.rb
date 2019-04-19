@@ -8,9 +8,8 @@ describe Api::Repository::ChannelRepository do
   describe "all" do
     let(:channels) { ChannelRepository.all }
 
-    xit "return channel list" do
-      pp channels
-      expect(channels.class).to eq Google::Apis::YoutubeV3::SearchListsResponse
+    it "return response" do
+      expect(channels.class).to eq Api::Response::ChannelResponse
     end
   end
 end
