@@ -31,7 +31,8 @@ jobs:
           path: ~/project
       - ruby-orbs/bundle-install:
           restore_bundled_with: false
-      - run: bundle exec rubocop
+      - run: curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s
+      - run: bundle exec rubocop | ./bin/reviewdog -f=rubocop -reporter=github-pr-check
 
   test_server:
     executor: 
