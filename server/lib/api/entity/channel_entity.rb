@@ -19,20 +19,20 @@ module Api
 
       private
 
-      def modelized_hash
-        @channel_hash.inject(Hash.new) do |result, item|
-          key, value = item
-          case key
-          when "title" then
-            result.store("title", value)
-          when "description" then
-            result.store("description", value)
-          when "published_at" then
-            result.store("published_at", value)
+        def modelized_hash
+          @channel_hash.inject(Hash.new) do |result, item|
+            key, value = item
+            case key
+            when "title" then
+              result.store("title", value)
+            when "description" then
+              result.store("description", value)
+            when "published_at" then
+              result.store("published_at", value)
+            end
+            result
           end
-          result
         end
-      end
     end
   end
 end
