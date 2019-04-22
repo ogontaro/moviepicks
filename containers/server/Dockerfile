@@ -1,7 +1,13 @@
-FROM ruby:2.5.3
+FROM ruby:2.6.3-slim
 
 ENV LANG C.UTF-8
 RUN cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
+# mysql-client use default-libmysqlclient-dev
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends build-essential wget default-libmysqlclient-dev && \
+    apt-get clean && \
+    rm -r /var/lib/apt/lists/*
 
 ENV ENTRYKIT_VERSION 0.4.0
 RUN wget -q https://github.com/progrium/entrykit/releases/download/v${ENTRYKIT_VERSION}/entrykit_${ENTRYKIT_VERSION}_Linux_x86_64.tgz && \
@@ -10,11 +16,6 @@ RUN wget -q https://github.com/progrium/entrykit/releases/download/v${ENTRYKIT_V
     mv entrykit /bin/entrykit && \
     chmod +x /bin/entrykit && \
     entrykit --symlink
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential && \
-    apt-get clean && \
-    rm -r /var/lib/apt/lists/*
 
 ENV USER_NAME moviepicks
 ENV USER_HOME /home/${USER_NAME}
@@ -41,4 +42,4 @@ EXPOSE 3000
 ENTRYPOINT [ \
     "prehook", "ruby -v", "--", \
     "prehook", "rm -f tmp/pids/server.pid", \
-    "prehook", "bundle install -j4 --clean", "--"]
+    "prehook", "bundle install -j4 --clean --quiet", "--"]
