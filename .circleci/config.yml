@@ -32,7 +32,7 @@ jobs:
       - ruby-orbs/bundle-install:
           restore_bundled_with: false
       - run: curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s
-      - run: bundle exec rubocop | ./bin/reviewdog -f=rubocop -reporter=github-pr-check
+      - run: bundle exec rubocop | ./bin/reviewdog -f=rubocop -reporter=github-pr-check -diff="git diff origin/master"
 
   test_server:
     executor: 
