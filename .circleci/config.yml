@@ -23,7 +23,7 @@ executors:
       TZ: "Asia/Tokyo"
 
 jobs:
-  test_server:
+  rspec:
     executor: 
       name: server
     steps:
@@ -40,4 +40,4 @@ jobs:
 workflows:
   test:
     jobs:
-      - test_server
+      - rspec
