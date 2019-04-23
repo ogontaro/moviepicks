@@ -15,6 +15,7 @@ executors:
       RAILS_ENV: 'test'
       DATABASE_HOST: 127.0.0.1
       TZ: "Asia/Tokyo"
+      REVIEWDOG_VERSION: 0.9.11
   frontend:
     docker:
       - image: circleci/node:8.11.4
@@ -31,7 +32,10 @@ jobs:
           path: ~/project
       - ruby-orbs/bundle-install:
           restore_bundled_with: false
-      - run: curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s
+      - run:
+          name: Install reviewdog
+          command: curl -fSL https://github.com/haya14busa/reviewdog/releases/download/$REVIEWDOG_VERSION/reviewdog_linux_amd64 -o reviewdog && chmod +x ./bin/reviewdog
+      # - run: curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s
       - run: bundle exec rubocop | ./bin/reviewdog -f=rubocop -diff="git diff origin/master"
 
   test_server:
