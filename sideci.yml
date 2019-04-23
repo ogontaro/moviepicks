@@ -1,0 +1,7 @@
+linter:
+  rubocop:
+    root_dir: 'server'
+    gems: 
+      - rubocop-performance
+      - rubocop-rspec
+      - rubocop-inflector

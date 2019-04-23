@@ -23,16 +23,6 @@ executors:
       TZ: "Asia/Tokyo"
 
 jobs:
-  rubocop:
-    executor: 
-      name: server
-    steps:
-      - checkout:
-          path: ~/project
-      - ruby-orbs/bundle-install:
-          restore_bundled_with: false
-      - run: bundle exec rubocop
-
   test_server:
     executor: 
       name: server
@@ -48,7 +38,6 @@ jobs:
           path: ~/rspec
 
 workflows:
-  lint_and_test:
+  test:
     jobs:
-      - rubocop
       - test_server
