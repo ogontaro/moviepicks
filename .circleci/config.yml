@@ -36,7 +36,7 @@ jobs:
           name: Install reviewdog
           command: curl -fSL https://github.com/haya14busa/reviewdog/releases/download/$REVIEWDOG_VERSION/reviewdog_linux_amd64 -o reviewdog && chmod +x ./bin/reviewdog
       # - run: curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s
-      - run: bundle exec rubocop | ./bin/reviewdog -f=rubocop -diff="git diff origin/master"
+      - run: bundle exec rubocop | ./bin/reviewdog -f=rubocop -reporter=github-pr-review
 
   test_server:
     executor: 
