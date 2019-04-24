@@ -1,38 +1,43 @@
-version: '3'
+version: '3.7'
+
+x-template: &rails
+  build:
+    dockerfile: ../containers/server/Dockerfile
+    context: ./server
+  volumes:
+    - /home/moviepicks/project/tmp
+    - ./server/:/home/moviepicks/project/
+
 services:
-  server: &base
-    build:
-      dockerfile: '../containers/server/Dockerfile'
-      context: './server'
+  server: 
+    <<: *rails
     container_name: moviepicks_server
     command: bash -c "bundle exec rails s -b 0.0.0.0"
-    environment:
-      RAILS_ENV: 'development'
-      TZ: "Asia/Tokyo"
     ports:
-      - "3000:3000"
-    volumes:
-      - ./server/:/home/moviepicks/project/
+      - 3000:3000
+    depends_on:
+      - db
+      - redis
+      - worker
 
   worker:  
-    <<: *base
+    <<: *rails
     container_name: moviepicks_worker
     command: bash -c "bundle exec sidekiq"
-    ports:
-      - "3001:3000"
+    depends_on:
+      - db
+      - redis
 
   db:
     image: mysql:5.7
     container_name: moviepicks_db
     environment:
-      MYSQL_DATABASE: 'moviepicks_development'
-      MYSQL_ROOT_PASSWORD: 'password'
-      TZ: "Asia/Tokyo"
+      MYSQL_DATABASE: moviepicks_development
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Asia/Tokyo
     volumes:
       - ./containers/db/my.cnf:/etc/mysql/my.cnf
       - db:/var/lib/mysql
-    ports:
-      - "3306:3306"
 
   redis:
     image: redis:5.0.4

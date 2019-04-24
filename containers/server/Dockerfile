@@ -1,6 +1,8 @@
 FROM ruby:2.6.3-slim
 
-ENV LANG C.UTF-8
+ENV LANG="C.UTF-8" \
+    RAILS_ENV="development" \
+    TZ="Asia/Tokyo" 
 RUN cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 # mysql-client use default-libmysqlclient-dev
@@ -36,6 +38,7 @@ RUN chown ${USER_NAME}:${USER_NAME} Gemfile*
 USER ${USER_NAME}
 
 RUN bundle install --jobs 4
+RUN mkdir tmp
 
 EXPOSE 3000
 
