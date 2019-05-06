@@ -35,6 +35,8 @@ services:
       MYSQL_DATABASE: moviepicks_development
       MYSQL_ROOT_PASSWORD: password
       TZ: Asia/Tokyo
+    ports:
+      - 3306:3306
     volumes:
       - ./containers/db/my.cnf:/etc/mysql/my.cnf
       - db:/var/lib/mysql
