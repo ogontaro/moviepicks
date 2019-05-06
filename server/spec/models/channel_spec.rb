@@ -17,6 +17,13 @@
 #  channel_id(チャンネルID)                                 :string(255)
 #  etag_id(etag ID)                                    :string(255)
 #
+# Indexes
+#
+#  index_channels_on_comment_count     (comment_count)
+#  index_channels_on_published_at      (published_at)
+#  index_channels_on_subscriber_count  (subscriber_count)
+#  index_channels_on_view_count        (view_count)
+#
 
 require "rails_helper"
 

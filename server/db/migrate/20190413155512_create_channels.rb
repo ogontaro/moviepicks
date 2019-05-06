@@ -7,10 +7,10 @@ class CreateChannels < ActiveRecord::Migration[5.2]
       t.string :etag_id, comment: "etag ID"
       t.string :title, comment: "チャンネルのタイトル"
       t.string :description, comment: "チャンネルの説明"
-      t.datetime :published_at, comment: "チャンネルの開設日"
-      t.integer :view_count, comment: "チャンネルの再生回数"
-      t.integer :comment_count, comment: "チャンネルのコメント数"
-      t.integer :subscriber_count, comment: "チャンネルの登録者数"
+      t.datetime :published_at, comment: "チャンネルの開設日", index: true
+      t.integer :view_count, comment: "チャンネルの再生回数", index: true
+      t.integer :comment_count, comment: "チャンネルのコメント数", index: true
+      t.integer :subscriber_count, comment: "チャンネルの登録者数", index: true
       t.boolean :hidden_subscriber_count, comment: "チャンネル登録者数を公開表示するかどうかを指定します"
 
       t.timestamps

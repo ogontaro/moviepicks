@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_13_155543) do
+ActiveRecord::Schema.define(version: 2019_05_06_162746) do
 
   create_table "channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "channel_id", comment: "チャンネルID"
@@ -24,6 +24,43 @@ ActiveRecord::Schema.define(version: 2019_04_13_155543) do
     t.boolean "hidden_subscriber_count", comment: "チャンネル登録者数を公開表示するかどうかを指定します"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["comment_count"], name: "index_channels_on_comment_count"
+    t.index ["published_at"], name: "index_channels_on_published_at"
+    t.index ["subscriber_count"], name: "index_channels_on_subscriber_count"
+    t.index ["view_count"], name: "index_channels_on_view_count"
+  end
+
+  create_table "guide_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "title", comment: "ガイドがテゴリのタイトル"
+    t.string "guide_category_id", comment: "ガイドカテゴリID"
+    t.string "channel_id", comment: "ガイドカテゴリ用チャンネルID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "guide_categories_channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "guide_categories_id"
+    t.bigint "channels_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["channels_id"], name: "index_guide_categories_channels_on_channels_id"
+    t.index ["guide_categories_id"], name: "index_guide_categories_channels_on_guide_categories_id"
+  end
+
+  create_table "video_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "title", comment: "ビデオカテゴリのタイトル"
+    t.string "video_category_id", comment: "ビデオカテゴリID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "video_categories_videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.bigint "video_categories_id"
+    t.bigint "videos_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["video_categories_id"], name: "index_video_categories_videos_on_video_categories_id"
+    t.index ["videos_id"], name: "index_video_categories_videos_on_videos_id"
   end
 
   create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
@@ -42,7 +79,17 @@ ActiveRecord::Schema.define(version: 2019_04_13_155543) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["channel_id"], name: "index_videos_on_channel_id"
+    t.index ["comment_count"], name: "index_videos_on_comment_count"
+    t.index ["dislike_count"], name: "index_videos_on_dislike_count"
+    t.index ["favorite_count"], name: "index_videos_on_favorite_count"
+    t.index ["like_count"], name: "index_videos_on_like_count"
+    t.index ["published_at"], name: "index_videos_on_published_at"
+    t.index ["view_count"], name: "index_videos_on_view_count"
   end
 
+  add_foreign_key "guide_categories_channels", "channels", column: "channels_id"
+  add_foreign_key "guide_categories_channels", "guide_categories", column: "guide_categories_id"
+  add_foreign_key "video_categories_videos", "video_categories", column: "video_categories_id"
+  add_foreign_key "video_categories_videos", "videos", column: "videos_id"
   add_foreign_key "videos", "channels"
 end

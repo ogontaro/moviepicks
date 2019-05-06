@@ -17,7 +17,17 @@
 #  channel_id(チャンネルID)                                 :string(255)
 #  etag_id(etag ID)                                    :string(255)
 #
+# Indexes
+#
+#  index_channels_on_comment_count     (comment_count)
+#  index_channels_on_published_at      (published_at)
+#  index_channels_on_subscriber_count  (subscriber_count)
+#  index_channels_on_view_count        (view_count)
+#
 
 class Channel < ApplicationRecord
+  has_many :guide_categories_channels
+  has_many :categories, through: :guide_categories_channels, class_name: "GuideCategory", source: :guide_category
+
   has_many :videos, dependent: :destroy
 end

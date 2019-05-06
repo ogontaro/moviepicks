@@ -22,7 +22,13 @@
 #
 # Indexes
 #
-#  index_videos_on_channel_id  (channel_id)
+#  index_videos_on_channel_id      (channel_id)
+#  index_videos_on_comment_count   (comment_count)
+#  index_videos_on_dislike_count   (dislike_count)
+#  index_videos_on_favorite_count  (favorite_count)
+#  index_videos_on_like_count      (like_count)
+#  index_videos_on_published_at    (published_at)
+#  index_videos_on_view_count      (view_count)
 #
 # Foreign Keys
 #
