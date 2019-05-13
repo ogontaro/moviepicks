@@ -9,7 +9,6 @@ describe Api::Repository::GuideCategoryRepository do
     let(:categories) { GuideCategoryRepository.all }
 
     xit "return response" do
-      # expect(categories.class).to eq Api::Response::GuideCategoryResponse
       expect(categories.class).to eq Api::Response::GuideCategoryResponse
     end
   end
