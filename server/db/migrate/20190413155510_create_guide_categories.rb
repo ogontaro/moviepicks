@@ -3,7 +3,7 @@
 class CreateGuideCategories < ActiveRecord::Migration[5.2]
   def change
     create_table :guide_categories do |t|
-      t.string :title, comment: "ガイドがテゴリのタイトル"
+      t.string :title, comment: "ガイドカテゴリのタイトル"
       t.string :guide_category_id, comment: "ガイドカテゴリID"
       t.string :channel_id, comment: "ガイドカテゴリ用チャンネルID"
 
