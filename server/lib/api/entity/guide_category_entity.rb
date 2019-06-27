@@ -8,8 +8,8 @@ module Api
       end
 
       def to_model
-        category = GuideCategory.find_or_create_by(guide_category_id: modelized_hash["guide_category_id"])
-        category.update modelized_hash
+        category = GuideCategory.find_or_initialize_by(guide_category_id: modelized_hash["guide_category_id"])
+        category.assign_attributes modelized_hash
         category
       end
 

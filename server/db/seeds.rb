@@ -8,4 +8,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Api::Repository::GuideCategoryRepository.all.result.each { |category| category.to_model }
+Api::Repository::GuideCategoryRepository.all.result.map(&:to_model).each(&:save)
+
