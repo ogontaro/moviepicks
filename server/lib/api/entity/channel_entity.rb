@@ -8,7 +8,7 @@ module Api
       end
 
       def to_model
-        channel = Channel.find_or_create_by(channel_id: @channel_hash["channel_id"])
+        channel = Channel.find_or_initialize_by(channel_id: @channel_hash["channel_id"])
         channel.update modelized_hash
         channel
       end
