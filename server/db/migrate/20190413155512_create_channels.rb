@@ -3,11 +3,11 @@
 class CreateChannels < ActiveRecord::Migration[5.2]
   def change
     create_table :channels do |t|
-      t.string :channel_id, comment: "チャンネルID"
-      t.string :etag_id, comment: "etag ID"
-      t.string :title, comment: "チャンネルのタイトル"
+      t.string :channel_id, comment: "チャンネルID", null: false
+      t.string :etag_id, comment: "etag ID", null: false
+      t.string :title, comment: "チャンネルのタイトル", null: false
       t.string :description, comment: "チャンネルの説明"
-      t.datetime :published_at, comment: "チャンネルの開設日", index: true
+      t.datetime :published_at, comment: "チャンネルの開設日", index: true, null: false
       t.integer :view_count, comment: "チャンネルの再生回数", index: true
       t.integer :comment_count, comment: "チャンネルのコメント数", index: true
       t.integer :subscriber_count, comment: "チャンネルの登録者数", index: true

@@ -13,11 +13,11 @@
 ActiveRecord::Schema.define(version: 2019_05_06_162746) do
 
   create_table "channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "channel_id", comment: "チャンネルID"
-    t.string "etag_id", comment: "etag ID"
-    t.string "title", comment: "チャンネルのタイトル"
+    t.string "channel_id", null: false, comment: "チャンネルID"
+    t.string "etag_id", null: false, comment: "etag ID"
+    t.string "title", null: false, comment: "チャンネルのタイトル"
     t.string "description", comment: "チャンネルの説明"
-    t.datetime "published_at", comment: "チャンネルの開設日"
+    t.datetime "published_at", null: false, comment: "チャンネルの開設日"
     t.integer "view_count", comment: "チャンネルの再生回数"
     t.integer "comment_count", comment: "チャンネルのコメント数"
     t.integer "subscriber_count", comment: "チャンネルの登録者数"
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
   end
 
   create_table "guide_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "title", comment: "ガイドがテゴリのタイトル"
-    t.string "guide_category_id", comment: "ガイドカテゴリID"
-    t.string "channel_id", comment: "ガイドカテゴリ用チャンネルID"
+    t.string "title", null: false, comment: "ガイドカテゴリのタイトル"
+    t.string "guide_category_id", null: false, comment: "ガイドカテゴリID"
+    t.string "channel_id", null: false, comment: "ガイドカテゴリ用チャンネルID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,8 +48,8 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
   end
 
   create_table "video_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "title", comment: "ビデオカテゴリのタイトル"
-    t.string "video_category_id", comment: "ビデオカテゴリID"
+    t.string "title", null: false, comment: "ビデオカテゴリのタイトル"
+    t.string "video_category_id", null: false, comment: "ビデオカテゴリID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -65,11 +65,11 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
 
   create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "channel_id"
-    t.string "video_id", comment: "動画ID"
-    t.string "etag_id", comment: "etag ID"
-    t.string "title", comment: "動画のタイトル"
+    t.string "video_id", null: false, comment: "動画ID"
+    t.string "etag_id", null: false, comment: "etag ID"
+    t.string "title", null: false, comment: "動画のタイトル"
     t.string "description", comment: "動画の説明"
-    t.datetime "published_at", comment: "動画のアップロード日時"
+    t.datetime "published_at", null: false, comment: "動画のアップロード日時"
     t.integer "duration", comment: "動画の長さ(秒)"
     t.integer "view_count", comment: "動画の再生回数"
     t.integer "like_count", comment: "高く評価したユーザの数"
