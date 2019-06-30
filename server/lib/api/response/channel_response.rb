@@ -3,16 +3,17 @@
 module Api
   module Response
     class ChannelResponse < ApplicationResponse
-      attr_reader :response_body, :params
+      attr_reader :response_body, :params, :page_token
 
-      def initialize(response_body, part, order)
+      def initialize(response_body, part, order, page_token: nil)
         @response_body = response_body
         @params = { part: part, order: order}
+        @page_token = page_token
       end
 
       def next
-        @next = ApplicationResponse.client.list_searches(@params[:part], type: "channel", page_token: @response_body.next_page_token, max_results: 50, order: @params[:order], region_code: "JP")
-        ChannelResponse.new @next, @params[:part], @params[:order]
+        @page_token = @response_body.next_page_token
+        @response_body = ApplicationResponse.client.list_searches(@params[:part], type: "channel", page_token: @response_body.next_page_token, max_results: 50, order: @params[:order], region_code: "JP")
       end
 
       def result
