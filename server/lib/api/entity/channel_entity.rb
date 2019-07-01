@@ -8,7 +8,7 @@ module Api
       end
 
       def to_model
-        channel = Channel.find_or_initialize_by(channel_id: @channel_hash["channel_id"])
+        channel = Channel.find_or_initialize_by(channel_id: @channel_hash["snippet"]["channel_id"])
         channel.update modelized_hash
         channel
       end
@@ -19,7 +19,7 @@ module Api
 
       private
         def modelized_hash
-          @channel_hash.inject(Hash.new) do |result, item|
+          hash = @channel_hash["snippet"].inject(Hash.new) do |result, item|
             key, value = item
             case key
             when "title" then
@@ -31,6 +31,8 @@ module Api
             end
             result
           end
+          hash.store("etag", @channel_hash["etag"])
+          hash
         end
     end
   end
