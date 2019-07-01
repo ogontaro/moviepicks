@@ -55,6 +55,8 @@ GEM
     byebug (11.0.1)
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     crass (1.0.4)
     debase (0.2.2)
       debase-ruby_core_source (>= 0.10.2)
@@ -96,6 +98,7 @@ GEM
     graphql_rails (0.7.0)
       activesupport (>= 4)
       graphql (~> 1)
+    hashdiff (0.4.0)
     httpclient (2.8.3)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
@@ -212,6 +215,7 @@ GEM
       rake (>= 0.8.1)
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
+    safe_yaml (1.0.5)
     sidekiq (5.2.7)
       connection_pool (~> 2.2, >= 2.2.2)
       rack (>= 1.5.0)
@@ -239,6 +243,11 @@ GEM
       thread_safe (~> 0.1)
     uber (0.1.0)
     unicode-display_width (1.6.0)
+    vcr (5.0.0)
+    webmock (3.6.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -271,6 +280,8 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+  vcr
+  webmock
 
 RUBY VERSION
    ruby 2.6.3p62

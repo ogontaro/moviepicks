@@ -14,6 +14,11 @@ gem "mysql2", ">= 0.4.4", "< 0.6.0"
 gem "puma", "~> 3.11"
 gem "sidekiq"
 
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+end
+
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   gem "debase"
