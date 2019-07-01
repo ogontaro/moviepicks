@@ -7,7 +7,7 @@ MoviePicks is Youtube Ranking Site
 ### Init Env
 ```
 $ cp ./server/.env.example ./server/.env
-$ vim ./server/.env.example # add env
+$ vim ./server/.env
 ```
 
 ### Run app
