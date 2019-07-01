@@ -28,4 +28,4 @@ test:
 
 production:
   <<: *default
-  database: centrl_test
+  database: moviepicks_production
