@@ -9,4 +9,3 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Api::Repository::GuideCategoryRepository.all.result.map(&:to_model).each(&:save)
-

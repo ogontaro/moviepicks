@@ -7,7 +7,7 @@ module Api
 
       def initialize(response_body, part, order, page_token: nil)
         @response_body = response_body
-        @params = { part: part, order: order}
+        @params = { part: part, order: order }
         @page_token = page_token
       end
 

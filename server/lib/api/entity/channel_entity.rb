@@ -18,7 +18,6 @@ module Api
       end
 
       private
-
         def modelized_hash
           @channel_hash.inject(Hash.new) do |result, item|
             key, value = item

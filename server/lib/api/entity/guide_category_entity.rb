@@ -18,21 +18,20 @@ module Api
       end
 
       private
-
-      def modelized_hash
-        @guide_category_hash.inject(Hash.new) do |result, item|
-          key, value = item
-          case key
-          when :id then
-            result.store("guide_category_id", value)
-          when :channel_id then
-            result.store("channel_id", value)
-          when :title then
-            result.store("title", value)
+        def modelized_hash
+          @guide_category_hash.inject(Hash.new) do |result, item|
+            key, value = item
+            case key
+            when :id then
+              result.store("guide_category_id", value)
+            when :channel_id then
+              result.store("channel_id", value)
+            when :title then
+              result.store("title", value)
+            end
+            result
           end
-          result
         end
-      end
     end
   end
 end
