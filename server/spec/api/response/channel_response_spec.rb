@@ -5,22 +5,32 @@ require "rails_helper"
 describe Api::Response::ChannelResponse do
   let(:response) { Api::Repository::ChannelRepository.all }
 
-  xdescribe "#result" do
+  describe "#result" do
     it "return Array of ChannelEntity" do
-      expect(response.result.class).to eq Array
-      expect(response.result.first.class).to eq Api::Entity::ChannelEntity
+      VCR.use_cassette 'api/response/channel_repository/result', record: :new_episodes do
+        expect(response.result.class).to eq Array
+        expect(response.result.first.class).to eq Api::Entity::ChannelEntity
+      end
     end
   end
 
-  xdescribe "#next" do
-    before { response.next }
+  describe "#next" do
+    before {
+      VCR.use_cassette 'api/response/channel_repository/next', record: :new_episodes do
+        response.next
+      end
+    }
 
     it "get next page" do
-      expect(response.class).to eq Api::Response::ChannelResponse
+      VCR.use_cassette 'api/response/channel_repository/next', record: :new_episodes do
+        expect(response.class).to eq Api::Response::ChannelResponse
+      end
     end
 
     it "has page token" do
-      expect(response.page_token).not_to be nil
+      VCR.use_cassette 'api/response/channel_repository/next', record: :new_episodes do
+        expect(response.page_token).not_to be nil
+      end
     end
   end
 end

@@ -31,7 +31,7 @@ module Api
             end
             result
           end
-          hash.store("etag", @channel_hash["etag"])
+          hash.store("etag_id", @channel_hash["etag"])
           hash
         end
     end

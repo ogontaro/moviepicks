@@ -1,0 +1,162 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/guideCategories?hl=ja-JP&key=<GOOGLE_API_KEY>&part=id,snippet&regionCode=JP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - unknown/0.0.0 google-api-ruby-client/0.30.4 Linux/4.9.125-linuxkit (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Tue, 02 Jul 2019 16:09:10 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 02 Jul 2019 16:09:10 GMT
+      Date:
+      - Tue, 02 Jul 2019 16:09:10 GMT
+      Cache-Control:
+      - private, max-age=86400, must-revalidate, no-transform
+      Etag:
+      - '"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/P881p9iYehXQypdySsQKQA3NomI"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,44,43,39"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#guideCategoryListResponse",
+         "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/P881p9iYehXQypdySsQKQA3NomI\"",
+         "items": [
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/P8eUmynuwkuIIZLtAUSGyjcu9PQ\"",
+           "id": "GCQmVzdCBvZiBZb3VUdWJl",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "YouTube のおすすめトピック"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/ImrTevQ0UvryyOmvjPFFu85AKCU\"",
+           "id": "GCQ3JlYXRvciBvbiB0aGUgUmlzZQ",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "Creator on the Rise"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/93JsvyokVHN6cP0sYlzqnzPFKDA\"",
+           "id": "GCTXVzaWM",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "音楽"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1OyfJk3bHzQfwdB3mrAq5Hlkyrs\"",
+           "id": "GCQ29tZWR5",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "コメディー"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/nPXKSW3gvbE_IGO9kQ0pVWWIX3E\"",
+           "id": "GCRmlsbSAmIEVudGVydGFpbm1lbnQ",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "Film & Entertainment"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/v6NbgmZzRUydPytEQJyAMT9_-ng\"",
+           "id": "GCR2FtaW5n",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "ゲーム"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/H8dJkufrPVbVrXxR9lHnk7Wmkts\"",
+           "id": "GCQmVhdXR5ICYgRmFzaGlvbg",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "美容とファッション"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/6i9c51-zWxagd6XuXLzdq0sN0wk\"",
+           "id": "GCU3BvcnRz",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "スポーツ"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/gRB8nQk5gRYsCtZYQAPUufs9ElM\"",
+           "id": "GCVGVjaA",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "Tech"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/NECk71Pm-g9olSeb8f65ze2ElOc\"",
+           "id": "GCQ29va2luZyAmIEhlYWx0aA",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "Cooking & Health"
+           }
+          },
+          {
+           "kind": "youtube#guideCategory",
+           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1h9cSZcqdB4MFYtPldcLpsLf0yk\"",
+           "id": "GCTmV3cyAmIFBvbGl0aWNz",
+           "snippet": {
+            "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+            "title": "ニュースと政治"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Tue, 02 Jul 2019 16:09:10 GMT
+recorded_with: VCR 5.0.0

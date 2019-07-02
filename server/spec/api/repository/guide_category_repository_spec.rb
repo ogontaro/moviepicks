@@ -8,8 +8,10 @@ describe Api::Repository::GuideCategoryRepository do
   describe "all" do
     let(:categories) { GuideCategoryRepository.all }
 
-    xit "return response" do
-      expect(categories.class).to eq Api::Response::GuideCategoryResponse
+    it "return response" do
+      VCR.use_cassette 'api/repository/guide_category_repository/all', record: :new_episodes do
+        expect(categories.class).to eq Api::Response::GuideCategoryResponse
+      end
     end
   end
 end
