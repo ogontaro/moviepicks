@@ -2,6 +2,7 @@ linter:
   rubocop:
     root_dir: 'server'
     gems: 
-      - rubocop-performance
-      - rubocop-rspec
       - rubocop-inflector
+      - rubocop-performance
+      - rubocop-rails
+      - rubocop-rspec
