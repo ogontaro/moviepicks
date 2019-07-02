@@ -15,8 +15,8 @@ gem "puma", "~> 3.11"
 gem "sidekiq"
 
 group :test do
-  gem 'vcr'
-  gem 'webmock'
+  gem "vcr"
+  gem "webmock"
 end
 
 group :development, :test do

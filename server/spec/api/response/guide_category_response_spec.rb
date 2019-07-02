@@ -7,7 +7,7 @@ describe Api::Response::GuideCategoryResponse do
 
   describe "#result" do
     it "return Array of GuideCategoryEntity" do
-      VCR.use_cassette 'api/response/guide_category_repository/result', record: :new_episodes do
+      VCR.use_cassette "api/response/guide_category_repository/result", record: :new_episodes do
         expect(response.result.class).to eq Array
         expect(response.result.first.class).to eq Api::Entity::GuideCategoryEntity
       end
