@@ -34,5 +34,32 @@ describe Api::Repository::ChannelRepository do
         end
       end
     end
+
+    context "when use published_after" do
+      let(:channels) { ChannelRepository.all(published_after: Date.today.days_ago(10).to_datetime.rfc3339) }
+      it "return response" do
+        VCR.use_cassette "api/repository/channel_repository/all", record: :new_episodes do
+          expect(channels.class).to eq Api::Response::ChannelResponse
+        end
+      end
+    end
+
+    context "when use published_before" do
+      let(:channels) { ChannelRepository.all(published_before: Date.today.days_ago(10).to_datetime.rfc3339) }
+      it "return response" do
+        VCR.use_cassette "api/repository/channel_repository/all", record: :new_episodes do
+          expect(channels.class).to eq Api::Response::ChannelResponse
+        end
+      end
+    end
+
+    context "when use published_before and after" do
+      let(:channels) { ChannelRepository.all(published_after: Date.today.days_ago(10).to_datetime.rfc3339, published_before: Date.today.days_ago(5).to_datetime.rfc3339) }
+      it "return response" do
+        VCR.use_cassette "api/repository/channel_repository/all", record: :new_episodes do
+          expect(channels.class).to eq Api::Response::ChannelResponse
+        end
+      end
+    end
   end
 end
