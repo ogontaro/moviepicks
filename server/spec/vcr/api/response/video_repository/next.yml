@@ -1,0 +1,1326 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?key=<GOOGLE_API_KEY>&maxResults=50&order=date&part=id,snippet&regionCode=JP&type=video
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - unknown/0.0.0 google-api-ruby-client/0.30.4 Linux/4.9.125-linuxkit (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Sun, 07 Jul 2019 14:23:42 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 07 Jul 2019 14:23:42 GMT
+      Date:
+      - Sun, 07 Jul 2019 14:23:42 GMT
+      Cache-Control:
+      - private, max-age=120, must-revalidate, no-transform
+      Etag:
+      - '"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/iiC_N2i3DZ0g8UaOaI6ixBKrAnA"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43,39"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\n \"kind\": \"youtube#searchListResponse\",\n \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/iiC_N2i3DZ0g8UaOaI6ixBKrAnA\\\"\",\n
+        \"nextPageToken\": \"CDIQAA\",\n \"regionCode\": \"JP\",\n \"pageInfo\": {\n
+        \ \"totalResults\": 1000000,\n  \"resultsPerPage\": 50\n },\n \"items\": [\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/JdMzBru6-YTrvhIww5QBzMaKhYo\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"OsQ7y1itL9U\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:17:53.000Z\",\n
+        \   \"channelId\": \"UC-JmsoRByJuIKmb6uq0CuzA\",\n    \"title\": \"【三国志大戦】社畜喫茶配信22\",\n
+        \   \"description\": \"三国志大戦のチーム「社畜喫茶POISON」の配信です。 今日は1人配信です。ベイルアウト（覇王）\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/OsQ7y1itL9U/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/OsQ7y1itL9U/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/OsQ7y1itL9U/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"社畜喫茶\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/FDnBwQ-tadP4p9Kt4omnN-zzHyE\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"z0EBVTZy7Uk\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:16:55.000Z\",\n
+        \   \"channelId\": \"UCGAOfYUgiFArpgQ4__-bx1Q\",\n    \"title\": \"Epstein
+        Arrest Is HUGE\",\n    \"description\": \"Support me on PayPal at hibbsforchange@gmail.com
+        Email me at hibbsforchange@gmail.com PO Box Juliet Hibbs 8297 Champions Gate
+        Blvd Davenport, FL.\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/z0EBVTZy7Uk/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/z0EBVTZy7Uk/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/z0EBVTZy7Uk/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"KAG News
+        Network-KNN\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/heLpvUnJb2Ba7roH55GbH11Jnis\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"_130XeWN4NY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:18:33.000Z\",\n
+        \   \"channelId\": \"UCFD78OTzB27H5HD4cjMp2JQ\",\n    \"title\": \"\U0001F534LIVE
+        FINALS | 2019 Swecon FIA World Rallycross of Sweden\",\n    \"description\":
+        \"SUBSCRIBE HERE: https://goo.gl/jeMkEf Website: www.fiaworldrallycross.com
+        Facebook: www.facebook.com/fiaworldrallycross Twitter: ...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/_130XeWN4NY/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/_130XeWN4NY/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/_130XeWN4NY/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"FIA World Rallycross Championship\",\n    \"liveBroadcastContent\": \"none\"\n
+        \  }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/BF2zIvHB4OrKCiXQQLrzQq9w3x4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"74nQ0d_56eo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:17:10.000Z\",\n
+        \   \"channelId\": \"UCrkvBwnxxsOC-QKB6qXaxog\",\n    \"title\": \"【泥酔】参加型！！エンジョイランク！！参加大歓迎　レインボーシックスシージ　シージ\",\n
+        \   \"description\": \"おはようございます‼   LuckyJaw(ラッキージョウ)です\U0001F988 気軽にジョウと呼んでください！
+        エンジョイクランRedMagicのクラマスを3年以上やってい...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/74nQ0d_56eo/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/74nQ0d_56eo/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/74nQ0d_56eo/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Lucky
+        Jaw\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/iGD7lITV5vWRc_w5EVZm9H-mIb8\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"euOg36yuSoo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:14:53.000Z\",\n
+        \   \"channelId\": \"UC5uh3zVGmvyQoks_LxBJ-5Q\",\n    \"title\": \"第六次直播01：香港天天游行烦不烦\",\n
+        \   \"description\": \"微博、B站号：经典阅读郑国成新群：582624268，答案：中国青年随便聊备用群号：645017617
+        本群不聊时事，聊时事去电报群，电报群地址：ht...\",\n    \"thumbnails\": {\n     \"default\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/euOg36yuSoo/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/euOg36yuSoo/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/euOg36yuSoo/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"中国青年郑国成\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/JQzN0bHYnEeDKBFcNH6nm_VhKqE\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"fZPdNR0rGp0\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:13:28.000Z\",\n
+        \   \"channelId\": \"UCGAit_W3ZhmIko9WY1sDYMA\",\n    \"title\": \"【PS4Pro】【destiny2】クランでギャンビットうぇーい【地球屋実況生放送7.7】\",\n
+        \   \"description\": \"ご来場ありがとうございます。 PS4のゲームを中心に生放送配信や動画作成をしております、地球屋と申します。
+        DestinyやBF1、FF15の配信が多めです...\",\n    \"thumbnails\": {\n     \"default\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/fZPdNR0rGp0/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/fZPdNR0rGp0/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/fZPdNR0rGp0/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"地球屋\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/sosvm5t8zTQsmKanQK5cC5ML-Ek\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Mcav1dmr_Tg\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:10:59.000Z\",\n
+        \   \"channelId\": \"UC84QHJZn3EwzTtTJ5I0n3dA\",\n    \"title\": \"【mhw】強属性氷盾斧
+        VS 榴弾無撃盾斧！勝手に選抜16人で対極ベヒーモス最強盾斧決定戦！\",\n    \"description\": \"Support the
+        stream: https://streamlabs.com/有限会社御幸 属氷MAX目線 →https://www.youtube.com/watch?v=ovrx-rNGEuI
+        ◼  各チーム選抜8人で構成 ◼  全5試合 ...\",\n    \"thumbnails\": {\n     \"default\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Mcav1dmr_Tg/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/Mcav1dmr_Tg/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Mcav1dmr_Tg/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"有限会社
+        御幸\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/sCJagMl5cDsG2f2glP6TOwbvkZI\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"_V6257lP64k\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:11:53.000Z\",\n
+        \   \"channelId\": \"UCz4j4-qucvhcmh9Vafo6Hyg\",\n    \"title\": \"Chile cuarto.
+        Copa América\",\n    \"description\": \"\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/_V6257lP64k/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/_V6257lP64k/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/_V6257lP64k/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"RODRIGO
+        SEPULVEDA #Sepu\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/jQGjCZsVWXSE5qOMpBjQVRv47Eg\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"HlMQtlYg384\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:10:51.000Z\",\n
+        \   \"channelId\": \"UCNw_bJYNQaeISN9yb5--Txg\",\n    \"title\": \"［参加歓迎]Destiny2
+        野獣 概要欄要確認 ［武マン］\",\n    \"description\": \"武マンのゲームライブ配信動画です 「注意事項＆タイムアウト・ブロック・フレンド削除基準＆参加不可事項」
+        ・グリッチ（PVP） ・途中抜け・...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/HlMQtlYg384/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/HlMQtlYg384/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/HlMQtlYg384/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"武マン\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/7YozICzva53YIfRLGSyKhdX2RQU\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"MuhBxkYF2qg\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:09:37.000Z\",\n
+        \   \"channelId\": \"UCDK5-ELwjsdnmqTtAvkHYeg\",\n    \"title\": \"[アンセム]よし！おらレンジャー本格的に頑張るぞ！♯２９\",\n
+        \   \"description\": \"\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/MuhBxkYF2qg/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/MuhBxkYF2qg/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/MuhBxkYF2qg/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"うたやんutaiya\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/uNhi4gF7aagqpkT8CC_Y_BqRUQY\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"bGAzogA0LjY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:08:20.000Z\",\n
+        \   \"channelId\": \"UClrSERSQkiQDVY4Tj-Db9zw\",\n    \"title\": \"ガンブレのレベリング【ff14】\",\n
+        \   \"description\": \"コメントいただけると飛んで喜びます。 お気軽にしのしょーと呼んでください！楽しくやろうと思ってるのでどうぞよろしく！
+        フレ戦も気が向...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/bGAzogA0LjY/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/bGAzogA0LjY/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/bGAzogA0LjY/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"。。しのしょー\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/2jJOOwVWNrBruwblXQuBzkur0W4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"QrOv3avv6jw\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:08:57.000Z\",\n
+        \   \"channelId\": \"UCv3sgNnOtLD9vjf79dzXX_w\",\n    \"title\": \"女性実況【歩くラマ
+        NT.さくら】NT主催デュオカスタムマッチ！！全機種OKフォートナイト参加型配信@everyone∞ ☆概要欄必ず読んでね(^_^)\",\n    \"description\":
+        \"参加条件は概要欄をちゃんと読んで頂く事です(^o^) ☆参加型のルール☆ （ルールを守って楽しくプレーしましょう）※主は下手です。それでも...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/QrOv3avv6jw/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/QrOv3avv6jw/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/QrOv3avv6jw/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"sa-ku - ra\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1oq7_6WZrCzvBjA9YcGxlPcyjNY\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"NIcb8HGyIos\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:01:53.000Z\",\n
+        \   \"channelId\": \"UCHVXbQzkl3rDfsXWo8xi2qw\",\n    \"title\": \"【ときメモGS2】イケメンVSリゼアン【#リゼアンWeek
+        /にじさんじ】\",\n    \"description\": \"我々屈強なヘルエスタ王国民はイケメンなんぞには屈しません。 リゼアンとイケメンの仁義なき戦いが今ここに始まる…。
+        リゼ・ヘルエスタ：ht...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/NIcb8HGyIos/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/NIcb8HGyIos/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/NIcb8HGyIos/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"アンジュ・カトリーナ
+        - Ange Katrina -\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/rbYz-n6r9YdxelRb1hnfWfL0O_U\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"DhHUvefDGf8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:01:51.000Z\",\n
+        \   \"channelId\": \"UCNZxp_Bi1OYaZOzWAFya2wg\",\n    \"title\": \"蘇貞昌丟筆\",\n
+        \   \"description\": \"\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/DhHUvefDGf8/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/DhHUvefDGf8/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/DhHUvefDGf8/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"詹江村\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/l1kNn4_1a-RW7RSWtlJ-cPhJBKo\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Kgb2g3nQzfQ\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:02:18.000Z\",\n
+        \   \"channelId\": \"UCWA00F57iw2gS_U0riPMr7Q\",\n    \"title\": \"MHW LIVE
+        ＊へたっぴだけどモンハンが好き＊ねーさんのみかた＊クエスト回し　ベヒなど　7月7日夜\",\n    \"description\": \"1人は
+        みんなの為に みんなは1人の為に (One for all,all for one ) [ お約束 ] 集会場に入られるさいは ハンターネームと挨拶をよろしくお願いします...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/Kgb2g3nQzfQ/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Kgb2g3nQzfQ/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/Kgb2g3nQzfQ/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"【Ne-san】ねーさんのみかた\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/u23Z6G-AoFbb0uHJL3p3ZiErA80\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"aYZBaOuQGTQ\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:01:38.000Z\",\n
+        \   \"channelId\": \"UCsbTob19Z3n6rlseoEJGhmQ\",\n    \"title\": \"[ディビジョン2]酔っぱらいおじさんがやる
+        のんびり装備集め！　クランメンバー募集中。\",\n    \"description\": \"酒と音楽が大好きなおじさんです。 みんなで楽しくがモットー！
+        視聴者の皆様のご意見を参考にいろいろなゲームをやっていきたいと思ってま...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/aYZBaOuQGTQ/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/aYZBaOuQGTQ/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/aYZBaOuQGTQ/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"【BOWZ】まさみ。\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/qlUiljRKYlkwOdKboFhtQ4rpnd4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"BXWq7_DCuXQ\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:55:34.000Z\",\n
+        \   \"channelId\": \"UCzrZm7z2wqR5DeOZLPA6n7g\",\n    \"title\": \"【RUST】
+        勉三のRUSTライブ\",\n    \"description\": \"Support the stream: https://streamlabs.com/勉三
+        RUST（サバイバルゲーム）のゲーム動画を配信しています。\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/BXWq7_DCuXQ/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/BXWq7_DCuXQ/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/BXWq7_DCuXQ/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"勉三\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/L_xWpaMJpl6OhUdMMgI4bwvfh_M\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"p_bsRQ3oPvc\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:53:56.000Z\",\n
+        \   \"channelId\": \"UCg-3F0aA7_q2IU-HPMhJzsg\",\n    \"title\": \"Everton
+        In Kenya: Kariobangi Sharks vs Everton\",\n    \"description\": \"SportPesa
+        Cup 2019 winners Kariobangi Sharks battle it out with Premier League side
+        Everton today at Kasarani Stadium. Watch the match LIVE here (only ...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/p_bsRQ3oPvc/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/p_bsRQ3oPvc/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/p_bsRQ3oPvc/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"SportPesa\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/MmWdlvYcsu09Md3oCueB4fC3G00\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"ieg559XVXvM\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:54:33.000Z\",\n
+        \   \"channelId\": \"UCyOjPD-Su5IVrtQnG-EAhbQ\",\n    \"title\": \"カスタムマッチ　参加方　ソロ・デェオ\",\n
+        \   \"description\": \"CZ4LCU 主にフォートナイトの配信や動画を投稿しています！ いままでのキル集https://www.youtube.com/playlist?list=PLCSH1Ywml6Geanfdr8MIctSeo7ckpoJiy
+        ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/ieg559XVXvM/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/ieg559XVXvM/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/ieg559XVXvM/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"CR_ modoki\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/-rzv9Vn-Dh4MAQcuhj3eihRMX-I\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"q-3Ko8qmy7s\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:47:58.000Z\",\n
+        \   \"channelId\": \"UCLeDa27rULpy5C1MOhk3atw\",\n    \"title\": \"Democrat
+        truth\",\n    \"description\": \"i am here to talk about farming and al that
+        goes with it.\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/q-3Ko8qmy7s/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/q-3Ko8qmy7s/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/q-3Ko8qmy7s/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Ag Talk
+        In The Raw\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/XYf-DVuUfiLl5STauXY_iuNEQA8\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"jtMTmyLxPK0\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:45:48.000Z\",\n
+        \   \"channelId\": \"UCHKuLpFy9q8XDp0i9WNHkDw\",\n    \"title\": \"Rift Rivals
+        2019 / VCS-LMS x LCK x LPL : Day 4 / Finals\",\n    \"description\": \"RiftRivals2019
+        #VCS #VETV #LMHT --- Vietnam Esports TV giữ bản quyền toàn bộ nội dung. Vietnam
+        eSports TV là kênh truyền hình thể thao điện tử số 1 tại ...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/jtMTmyLxPK0/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/jtMTmyLxPK0/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/jtMTmyLxPK0/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Vietnam Esports TV\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/ar3VpK3DfXslKpVTrAc4Rls9Qwg\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"ohhbZZ8_JCU\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:42:21.000Z\",\n
+        \   \"channelId\": \"UCDQNE6pGlL0b1f9shZWIf7A\",\n    \"title\": \"Breakfast
+        With Mallery!\",\n    \"description\": \"If you'd like to further express
+        your fandom by extending your generosity. https://paypal.me/mallerydwilliams?lo
+        Or make it more fun by browsing and selecting ...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/ohhbZZ8_JCU/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/ohhbZZ8_JCU/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/ohhbZZ8_JCU/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Mallery Williams\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/_bPjKlxyZOxlKYgtFpMYF9uOiBc\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"DWM-VbaiZ1o\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:34:13.000Z\",\n
+        \   \"channelId\": \"UCwCwbwynlBt13rhKZEi9FLQ\",\n    \"title\": \"【FF14】ネタバレ禁止　漆黒のヴィランズ　番外編\",\n
+        \   \"description\": \"Support the stream: https://streamlabs.com/games38
+        楽しくをモットーにプレイしてますので、合わない方はブラウザバックをお願いします ソシャゲ等は不定...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/DWM-VbaiZ1o/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/DWM-VbaiZ1o/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/DWM-VbaiZ1o/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"ノビータgames\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/EnFSzJmnetUjjrbIor-P8mDoKUc\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"7C7ETM_lZaA\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:34:38.000Z\",\n
+        \   \"channelId\": \"UCzY-OcXV-Vvg5iml3JN-sbQ\",\n    \"title\": \"［D2］運命次元ゲイム明日からPSビデオでネプのOVAが配信されるので皆見ようテューヌ\",\n
+        \   \"description\": \"\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/7C7ETM_lZaA/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/7C7ETM_lZaA/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/7C7ETM_lZaA/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"褐色ネギ\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/-uAtlTP2JQBWsHSuqQMSQxWiBg0\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Nw2tFDteImo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:30:00.000Z\",\n
+        \   \"channelId\": \"UCwO_xoYm2vjhu4kZSxFO5mA\",\n    \"title\": \"Rebuilding
+        A Super Cheap Wrecked Boat\",\n    \"description\": \"This might have been
+        the best deal we got on an auction! We put a pre bid on a boat that caught
+        our eye and without having to bid live we won this thing for ...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/Nw2tFDteImo/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Nw2tFDteImo/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/Nw2tFDteImo/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"goonzquad\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1CbGqwwahC44jkIDYvhlXOxc018\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"YOIptYn_jpU\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:30:46.000Z\",\n
+        \   \"channelId\": \"UChrqw3SxABVBY9JFQVTZxOw\",\n    \"title\": \"Idol On
+        The Road with KaladKaren and BoybandPH | July 7, 2019\",\n    \"description\":
+        \"Subscribe to Search for the Idol Philippines YouTube channel: http://bit.ly/IdolPhilippines
+        Watch the full episodes of Idol Philippines on TFC.\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/YOIptYn_jpU/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/YOIptYn_jpU/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/YOIptYn_jpU/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Idol Philippines\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Lt_jW5cGQ1cTp2binafP4iBJLyk\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"pMfz5gMDKBI\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:21:04.000Z\",\n
+        \   \"channelId\": \"UChSFYMyFBxa5j8HEbxJpCgg\",\n    \"title\": \"ピンキーマミのデスティニー2＃185野獣達の群れ英雄で剣をゲットしに行きます！Part2\",\n
+        \   \"description\": \"チャンネル登録宜しくお願いします♪高評価も宜しくお願いします！ 嫌な話しとかよけいな話しはいれません、しつこい人にはキックさせていた...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/pMfz5gMDKBI/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/pMfz5gMDKBI/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/pMfz5gMDKBI/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"oo-PinkyMami-oo\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/aEw4LOR4vWZcGQUk-jftmRTHnLk\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"alh9vx9vZH4\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:20:01.000Z\",\n
+        \   \"channelId\": \"UCSHzI-t58X8STwqjfSzp47w\",\n    \"title\": \"シャワーラジオ配信\",\n
+        \   \"description\": \"ジョーの曲はここ：https://joeinoue.wixsite.com/joeinoue/cdbaby-how-to-jp
+        ジョーの英会話はここ：https://joeinoue.wixsite.com/joeinoue/patreon-eng-setsumei ジョー
+        ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/alh9vx9vZH4/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/alh9vx9vZH4/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/alh9vx9vZH4/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"井上ジョーJAPAN\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/CC0cD9m08g9ixtt_SYXv4Mvm-VY\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"d55HD2TOT-M\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:19:42.000Z\",\n
+        \   \"channelId\": \"UC4eoHBByKXJ0DOmHUUy9Fsw\",\n    \"title\": \"ww2！参加型　初見歓迎(^O^)\",\n
+        \   \"description\": \"いろんなゲームで配信していこーと思います\U0001F919 チャンネル登録高評価ヨロシクです！(o^-^)b
+        フレンド募集中！配信仲間募集中！Twitter@MASAPYONtv...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/d55HD2TOT-M/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/d55HD2TOT-M/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/d55HD2TOT-M/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ゲーム実況M\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/TR4PIrY6EXIHxjzmeZKq0vloePE\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"h6xf_DyHL0M\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:18:12.000Z\",\n
+        \   \"channelId\": \"UC0-NdXj3Hzcr7EFh5hP00vw\",\n    \"title\": \"【ジャパンダートダービー2019】夏競馬の負けはJDDで取り返そう！天童なこ＆キャプテン渡辺の予想は!?\",\n
+        \   \"description\": \"「SPAT4」で地方競馬をはじめよう！ http://keiba.spat4.jp/ 入会手続きは最短15分、もちろん入会費＆年会費無料！
+        さらに馬券を買うだけで「ポイン...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/h6xf_DyHL0M/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/h6xf_DyHL0M/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/h6xf_DyHL0M/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"netkeibaTV\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/bHJ9f9ziAyz4_oIS1YHcUwxjl-c\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"d_0ScHzB3gA\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:16:54.000Z\",\n
+        \   \"channelId\": \"UCZJS0BAnJztt7FA6ZfkN26w\",\n    \"title\": \"【FF14】ストーリー最終章　【Ixion鯖】2019.07.07\",\n
+        \   \"description\": \"Support the stream: https://streamlabs.com/tukumotan1
+        勝手に応援してるHORIさんのPC用.PS3用コントローラーです。愛用品→https://amzn.to/2XRv5Jb 『ファイナル ...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/d_0ScHzB3gA/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/d_0ScHzB3gA/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/d_0ScHzB3gA/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"tukumo tan\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/lsoU0ZE2RwqDfjYJV7nGk1vTQKg\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"hJClGJDskeI\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:14:21.000Z\",\n
+        \   \"channelId\": \"UCXIJgqnII2ZOINSWNOGFThA\",\n    \"title\": \"Starbucks
+        apologizes after barista asked police officers to leave store\",\n    \"description\":
+        \"Tempe Officers Association President Rob Ferraro says that the officers
+        do not blame the Starbucks corporate headquarters. He says it's important
+        for officers to ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/hJClGJDskeI/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/hJClGJDskeI/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/hJClGJDskeI/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Fox News\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/2sd0cSDIi_f2EEF_56ogYMg7Q1A\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"HgWktnrj5JQ\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:10:42.000Z\",\n
+        \   \"channelId\": \"UClYIK2ko2QnxLi8vhyTz5xw\",\n    \"title\": \"제402편 김정민
+        때문에 가는 길이 다르다? 한국당이 우공당으로 흡수통합 된다고?\",\n    \"description\": \"자발적구독료후원 :
+        KEB하나은행 620-175918-819 여러분들의 자발적 구독료 후원은 애국방송 발전을 위해 소중하게 사용되고 있습니다 :연락처 :...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/HgWktnrj5JQ/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/HgWktnrj5JQ/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/HgWktnrj5JQ/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"MBI FOCUS민병일의시사포커스\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/aALtLSCsQwFCLFQvPebmLrL5eSU\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"VARNAQk4wrM\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:11:25.000Z\",\n
+        \   \"channelId\": \"UCFAfm2yChOaTKeDb973XwRA\",\n    \"title\": \"オーバーウォッチ　クソゲーは修行なのだ。\",\n
+        \   \"description\": \"ＯＷ愛ゆえに 人は悲しまねばならぬ！ ＯＷ愛ゆえに 人は苦しまねばならぬ！！ ｸｿﾋﾟｯｸに愛などいらぬ！！
+        はむかう者にはトロールある...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/VARNAQk4wrM/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/VARNAQk4wrM/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/VARNAQk4wrM/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"OWくじから\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/BS2hcB7MzRQIQX6Y81yPBYUXkOU\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"PltTyLGB9zI\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:09:56.000Z\",\n
+        \   \"channelId\": \"UCL805bekXbBRM17B7FINgbA\",\n    \"title\": \"daisuke_0315がPS4からブロードキャストoverwatchオーバーウォッチ\",\n
+        \   \"description\": \"\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/PltTyLGB9zI/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/PltTyLGB9zI/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/PltTyLGB9zI/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Daisuke0315\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/AQF8BHsLW4ogdwvcIALxnEcibuw\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"_3mXWhRq42I\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:05:39.000Z\",\n
+        \   \"channelId\": \"UCyxqa4hC_N1ffAOrS51OhTw\",\n    \"title\": \"【荒野行動】20時50分頃から
+        デュオゲリラ開催します！ 詳細はTwitter 配信来てくれた人は確定枠✨\",\n    \"description\": \"_noraです！配信を見て頂きありがとうございます！
+        主にYouTube、ミラティブにて配信をしています٩(ˊᗜˋ*)و YouTubeのチャンネル登録、Twitterのフ...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/_3mXWhRq42I/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/_3mXWhRq42I/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/_3mXWhRq42I/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"_ nora\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/7CCyn6_JZDJ8QNA1lRkLidgSIug\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"gQ-zdcEC-sc\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:03:23.000Z\",\n
+        \   \"channelId\": \"UCsRAXH3KJr04O78TK8Sfc9w\",\n    \"title\": \"ふんわりランクマ【伝説対決
+        -Arena of Valor-】\",\n    \"description\": \"わお 参加者募集 はんぺん王国AoV部です。 部員ほとんどいません。
+        参加者ゆるく募集 プレイ中にコメント拾えなさすぎなんで許してヒヤシンス...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/gQ-zdcEC-sc/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/gQ-zdcEC-sc/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/gQ-zdcEC-sc/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"はんぺん王国ユウシン\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Jm8yz2NpjkswNwkQQeVWCsWAorM\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Z7PLLscBCbQ\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:00:05.000Z\",\n
+        \   \"channelId\": \"UCwWhs_6x42TyRM4Wstoq8HA\",\n    \"title\": \"Talking
+        Dems - What Bernie Sanders Has Learned About Race in America | The Daily Show\",\n
+        \   \"description\": \"Democratic presidential candidate Bernie Sanders discusses
+        his philosophy for a welcoming immigration policy and explains how his approach
+        to racial issues ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/Z7PLLscBCbQ/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/Z7PLLscBCbQ/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Z7PLLscBCbQ/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"The Daily
+        Show with Trevor Noah\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/vygOrIlEvUng3xyUQyayK9PxtFw\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"SGNM4AXZFC0\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:01:12.000Z\",\n
+        \   \"channelId\": \"UC0mVh9cQGuHDE4KpBLWFSew\",\n    \"title\": \"訂閱破萬感謝您
+        總統民調街頭直播訪問篇\",\n    \"description\": \"\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/SGNM4AXZFC0/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/SGNM4AXZFC0/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/SGNM4AXZFC0/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"桃園孫先生\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/tXLJqlcbO-NATUz3QAqQ8PeM18s\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"0dF0i0p7FgA\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:00:12.000Z\",\n
+        \   \"channelId\": \"UCLFJxkc6mv0Mj6N49MHyK2Q\",\n    \"title\": \"On FaceTime
+        With Your Jealous Girlfriend Be Like\",\n    \"description\": \"We've finally
+        done a collaboration with our lovely friend Tucker Budzyn ❤ Go check out Tucker's
+        channel and watch his boy version of our FaceTime video: ...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/0dF0i0p7FgA/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/0dF0i0p7FgA/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/0dF0i0p7FgA/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Mayapolarbear\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/h4BaQH0qBeO-AOP1RmGGWF1VRQs\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"I9ji5jAjtnA\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:00:04.000Z\",\n
+        \   \"channelId\": \"UC2IYWWifoIht9T47z1Z5lJw\",\n    \"title\": \"Us (2019)
+        KILL COUNT\",\n    \"description\": \"PATREON ▻ https://patreon.com/deadmeatjames
+        MERCH (shirts & pins) ▻ http://www.DeadMeatStore.com/ TWITCH (livestreaming)
+        ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/I9ji5jAjtnA/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/I9ji5jAjtnA/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/I9ji5jAjtnA/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Dead Meat\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/9Dr8EHkLDz42laz9Sr7sgPwLWeM\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"IRhnd-7O7d8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:01:11.000Z\",\n
+        \   \"channelId\": \"UCMhXtMniobl7TS902KlKgFA\",\n    \"title\": \"レインボーシックス　ダイヤ帯♯27\",\n
+        \   \"description\": \"アカウントID Riishqn shanMelly Twitter@_AKEM1 ←フォローしてもらえれば許可します(
+        ˊ̱˂˃ˋ̱ ) clan ...Ar卍X ダイヤ帯で数少ないPADです   感度 y39...\",\n    \"thumbnails\": {\n
+        \    \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/IRhnd-7O7d8/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/IRhnd-7O7d8/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/IRhnd-7O7d8/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Riishan/りぃしゃん\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/d3Sr5tuSRcCPvEmM-2ZTjGCdhS4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"_xG6qTiks5E\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:00:09.000Z\",\n
+        \   \"channelId\": \"UCjsX10bUOSLjhpORAZLBLtg\",\n    \"title\": \"ディビジョン2#62
+        レイド合宿部屋！その2！\",\n    \"description\": \"はいどーも 部長です！ 毎週ほぼ土日、祝日をメインにPS4からブロキャス生放送！
+        ゆるく、のびのび、ダラダラと関西弁で背信していきます！...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/_xG6qTiks5E/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/_xG6qTiks5E/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/_xG6qTiks5E/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"部長たけし\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/FAlG0AGJcInWyS4EeIf489uSZZc\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"iXbVBJQCccQ\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T13:01:20.000Z\",\n
+        \   \"channelId\": \"UCenG5DES1t6SYGrgzGNzWzQ\",\n    \"title\": \"[8코기네]
+        6마리 웰시코기의 생일파티에 오신걸 환영합니다~\U0001F495\",\n    \"description\": \"2019년 7월7일은
+        우리 칸,아인,반쪽이,코코,리치,에디의 네번째 생일입니다~ 오셔서 축하 해 주신 분들, 못오셨지만 늘 저희 코기들 이뻐해주시는...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/iXbVBJQCccQ/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/iXbVBJQCccQ/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/iXbVBJQCccQ/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"8코기네 /8Corgi House\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/mMwO-1Dl9juM-6BGBb-Brr3XVEE\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"N515OV3FMgs\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:58:18.000Z\",\n
+        \   \"channelId\": \"UCYEm9Y7Lvnp3r79ksPBZK2A\",\n    \"title\": \"7/7　ガバ特　シーズン2
+        エイペックスレジェンズ　加齢た声で生放送\",\n    \"description\": \"こんにちは、加齢た声と申します。ニコニコ動画で「枯れた声でゲームを実況」シリーズを投稿させて頂いております。youtubeでも投稿をさせて頂...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/N515OV3FMgs/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/N515OV3FMgs/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/N515OV3FMgs/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"hirotakar加齢た声\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/WqfguhFPIEFfTMx29Iie7FmLws8\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"inRXPcuvIFk\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:56:02.000Z\",\n
+        \   \"channelId\": \"UCrDybdlLG0OK2rSzf54Hbmg\",\n    \"title\": \"39［TPS］PS4だ！
+        あめだま堂D視点の「THE DIVISION2（ディビジョン2） 」［PS4］\",\n    \"description\": \"TheDivision2
+        #ディビジョン2 #あめだま堂 【あめだま堂】 あめだま堂チャンネルへようこそ！ 本日は、あめだま堂がお送りする、P44版「Tom Clancy's...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/inRXPcuvIFk/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/inRXPcuvIFk/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/inRXPcuvIFk/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"あめだま堂/AMEDAMADO\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Sp2-Xs9VdqbMxKRsuTk55hTsghc\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"NuHJaRe9h40\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:50:43.000Z\",\n
+        \   \"channelId\": \"UCx46DugkyakuUtuhHzAmrcQ\",\n    \"title\": \"【APEX LEGENDS】アライグマパソコンを買うseason2【PS4】\",\n
+        \   \"description\": \"しゃ〜ぷと申します。 ゲームしながらゆったり楽しくだべりたい。 そんなだらっとしたチャンネルです！ どうぞごひいきに(ノ´∀｀*)
+        ↓フレ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/NuHJaRe9h40/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/NuHJaRe9h40/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/NuHJaRe9h40/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"ぐったりしゃーぷ\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/wGCskBDiH1D6GqN6PW-lcYQe09A\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"CDYzvssbwhs\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:47:08.000Z\",\n
+        \   \"channelId\": \"UCydat2_tzGxxkTSsd8Piy8g\",\n    \"title\": \"【ApexLegends】シーズン２初見！！\",\n
+        \   \"description\": \"Support the stream: https://streamlabs.com/tqq999 初めまして、TQQ999と申します。
+        PC オーバーウォッチ プレイ動画です。 Twitter ID @tqq999←フォロバ100%で行...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/CDYzvssbwhs/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/CDYzvssbwhs/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/CDYzvssbwhs/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"TQQ 999\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/OPxnOL_x99eZYlnwjkBkzh0i_Cg\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"VxQiqdoFtVs\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:47:09.000Z\",\n
+        \   \"channelId\": \"UCCVwhI5trmaSxfcze_Ovzfw\",\n    \"title\": \"【MHW】新米ハンターロアとチビ！！【初心者】\",\n
+        \   \"description\": \"にじさんじ所属 夢月ロアです\U0001F987 深淵をのぞくときロアもまた深淵からのぞいているのだ
+        \  ☔我のボイスが販売中なのだ☔ 【期間限定】あめも...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/VxQiqdoFtVs/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/VxQiqdoFtVs/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/VxQiqdoFtVs/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"夢月ロア\U0001F316Yuzuki
+        Roa\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/VGZJ1Nz2VsZkR8Tg14jAHNs83ZY\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"MhJVGfZRhIg\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:48:11.000Z\",\n
+        \   \"channelId\": \"UCi8n36NkW2uCQSFZNiYtuMQ\",\n    \"title\": \"Bronze
+        Medal Game | Day 7 | 2019 Women’s Wheelchair Basketball Euros\",\n    \"description\":
+        \"Teams will fight for the bronze medal on day seven of the 2019 International
+        Wheelchair Basketball Federation's women's division A European Championships.\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/MhJVGfZRhIg/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/MhJVGfZRhIg/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/MhJVGfZRhIg/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Paralympic Games\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  }\n
+        ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 07 Jul 2019 14:23:42 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?key=<GOOGLE_API_KEY>&maxResults=50&order=date&pageToken=CDIQAA&part=id,snippet&regionCode=JP&type=video
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - unknown/0.0.0 google-api-ruby-client/0.30.4 Linux/4.9.125-linuxkit (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Sun, 07 Jul 2019 14:23:42 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 07 Jul 2019 14:23:43 GMT
+      Date:
+      - Sun, 07 Jul 2019 14:23:43 GMT
+      Cache-Control:
+      - private, max-age=120, must-revalidate, no-transform
+      Etag:
+      - '"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Bs9g-UZEDxqtuI_HEdcTden8Crc"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43,39"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\n \"kind\": \"youtube#searchListResponse\",\n \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Bs9g-UZEDxqtuI_HEdcTden8Crc\\\"\",\n
+        \"nextPageToken\": \"CGQQAA\",\n \"prevPageToken\": \"CDIQAQ\",\n \"regionCode\":
+        \"JP\",\n \"pageInfo\": {\n  \"totalResults\": 1000000,\n  \"resultsPerPage\":
+        50\n },\n \"items\": [\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\":
+        \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/yIX9IjaLSVDuHFJ3AXfcnN2tFFg\\\"\",\n   \"id\":
+        {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"cWkxnV7uPmQ\"\n   },\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:45:08.000Z\",\n    \"channelId\":
+        \"UCzssk9XPI5tPRPeGJpbwcqA\",\n    \"title\": \"ニロ　bp\",\n    \"description\":
+        \"\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/cWkxnV7uPmQ/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/cWkxnV7uPmQ/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/cWkxnV7uPmQ/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Dante915\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/GI2F4iCs1vdj17W7JUDTkxs1Qws\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"AyIYIHLPMtg\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:38:17.000Z\",\n
+        \   \"channelId\": \"UCUFNaNGi3lnBPq4gtdfJCAA\",\n    \"title\": \"2019啤酒節
+        吳青峰\",\n    \"description\": \"2019.03.03 高雄Playlist Album 請按訂閱(+鈴鐺) 歡迎攝錄影直播邀約Sponsor
+        this channel： https://goo.gl/cQpNt2 FB Fan Page http://www.facebook.com/infinihd
+        ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/AyIYIHLPMtg/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/AyIYIHLPMtg/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/AyIYIHLPMtg/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"INFINI HD 4K ( dan201 )\",\n    \"liveBroadcastContent\": \"none\"\n   }\n
+        \ },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/0_eryP1ORzoN6AqAHHdrMhslrpA\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"DW0mdcf3Jo0\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:36:36.000Z\",\n
+        \   \"channelId\": \"UCWc-XpFHPK1SwGcvpFPZ8NA\",\n    \"title\": \"【公式】ハイライト：川崎フロンターレvsサガン鳥栖
+        明治安田生命Ｊ１リーグ 第18節 2019/7/7\",\n    \"description\": \"2019年7月7日（日）に行われた明治安田生命Ｊ１リーグ
+        第18節 川崎Ｆvs鳥栖のハイライト動画です。 「DAZN」で全試合生中継！ https://prf.hn/click/camref:...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/DW0mdcf3Jo0/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/DW0mdcf3Jo0/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/DW0mdcf3Jo0/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Jリーグ公式チャンネル\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/dhsF2AeJRU_e8phmdQy5_bwRG0I\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Nqd7Xs95rDA\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:35:05.000Z\",\n
+        \   \"channelId\": \"UCWc-XpFHPK1SwGcvpFPZ8NA\",\n    \"title\": \"【公式】ハイライト：レノファ山口ＦＣvsＦＣ町田ゼルビア
+        明治安田生命Ｊ２リーグ 第21節 2019/7/7\",\n    \"description\": \"2019年7月7日（日）に行われた明治安田生命Ｊ２リーグ
+        第21節 山口vs町田のハイライト動画です。 「DAZN」で全試合生中継！ https://prf.hn/click/camref:110...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/Nqd7Xs95rDA/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Nqd7Xs95rDA/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/Nqd7Xs95rDA/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Jリーグ公式チャンネル\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/thJw-PAZk1kPnKOt-3H-iRXN5S0\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"X9PPUgHyhg8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:34:17.000Z\",\n
+        \   \"channelId\": \"UCMI_zNhHvTSxOSZ1a-UhABQ\",\n    \"title\": \"スタジオニュートラルより愛を込めて～♪\",\n
+        \   \"description\": \"ほぼ毎週日曜日20時～生放送配信中♪ パーソナリティーは田村まゆみ。 絵本「みんな地球にあそびにきたよ！」の著者。
+        参加者のみなさんとの...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/X9PPUgHyhg8/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/X9PPUgHyhg8/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/X9PPUgHyhg8/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"田村 まゆみ\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/aBb2Z08G-5ElWFPtnuH0TzeXdho\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"6392q_sGbq4\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:35:24.000Z\",\n
+        \   \"channelId\": \"UC1bFLwz7Agmsu1MSNpt8Eig\",\n    \"title\": \"Cao thủ
+        gò vấp đại chiến cờ chớp\",\n    \"description\": \"Những ván cờ tướng hay
+        nhất ! ▭▻Subscribe ( Đăng kí ) kênh để xem Clip mới tiếp theo : https://bitly.vn/zl6
+        ▭▻ Facebook : https://bitly.vn/5-5a ▭▻Xem...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/6392q_sGbq4/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/6392q_sGbq4/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/6392q_sGbq4/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Cờ Tướng
+        Đường Phố\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/rsh7XlfoGk2GBAdPPAOL_pDhKRc\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"sVw_BbQCwCo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:34:02.000Z\",\n
+        \   \"channelId\": \"UC8MVGFQWKBiDgvT8Mn8jLpA\",\n    \"title\": \"【アンセム】参加型　＃98
+        七夕だし棚ぼたでレモンでないかなぁ【Anthem】\",\n    \"description\": \"ベロアと申しますヾ(*´▽｀*)ﾉ 皆様と遊んだりできたらな
+        と配信を始めてみました PSID Twitter ともに verour0123 です.\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/sVw_BbQCwCo/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/sVw_BbQCwCo/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/sVw_BbQCwCo/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ベロア\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/YxaReSz4qc0U4uu6UsfhMTA2DGE\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"wNAItJtHluY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:32:23.000Z\",\n
+        \   \"channelId\": \"UCwVuDnLK2eIkzf_TBh_aYsA\",\n    \"title\": \"#7【MHW】やっっっと続きが出来る！！やるぞ！！！！【まさるLIVE】\",\n
+        \   \"description\": \"1週間振りイエェェェェイ！！！ ▽サブチャンネル【くまらじミッドナイト】 https://www.youtube.com/channel/UCPIsA3UGJdkKtFY9U3aX2dg/about
+        ◇まさるのTwitter...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/wNAItJtHluY/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/wNAItJtHluY/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/wNAItJtHluY/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ちゃんたまさる\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/yWUZSFHZNPyjpHQbP6BfO01HmD4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"P7NLTB1gsUM\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:33:46.000Z\",\n
+        \   \"channelId\": \"UCSgXhrhwB7hmadmbXJJwgKg\",\n    \"title\": \"【Destiny2】まいけるすこふぃーるどの声優さん
+        (vP\",\n    \"description\": \"ゲーム配信【PS4】 I'm Christina PSID＊ TiNq-v- (SHR_21)
+        #FF14 ,#ApexLegends .Call of Duty Black Ops3 RainbowSixSiege, #Destiny2 MHW,
+        #BIOHAZARD ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/P7NLTB1gsUM/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/P7NLTB1gsUM/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/P7NLTB1gsUM/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"くりすてぃーな*\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/GnotoI4Pfz8mbDAIn9MvSgNiNxI\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"MvL4t_S2sHo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:31:41.000Z\",\n
+        \   \"channelId\": \"UCGYnlg-X9Zfa8gdzatvDYOQ\",\n    \"title\": \"MHW 極ベヒ!!光の戦士導き隊♪参加型♪概要欄見てね\",\n
+        \   \"description\": \"【参加方法】 1⃣概要欄の注意事項など最後まで読むこと 2️⃣HN申告の上、入室許可を取ってください
+        ◤◢◤◢注意◤◢◤◢ 概要欄やルールを...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/MvL4t_S2sHo/default_live.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/MvL4t_S2sHo/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/MvL4t_S2sHo/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"みーるch\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/ce6P8QBPxRDrzYyreRr6rvH-fb4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"GrOXyaHX6Jw\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:29:38.000Z\",\n
+        \   \"channelId\": \"UCs2OoLAw2FQ6sxgkWjGdQyA\",\n    \"title\": \"Dev&#39;s
+        World（FINAL FANTASY XIV　自分のペースでゆっくりと)\",\n    \"description\": \"Support the
+        stream: https://streamlabs.com/devilish デビリッシュが生放送を行うチャンネルです。 基本ドラゴンクエスト10かファイナルファンタジー14の放送...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/GrOXyaHX6Jw/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/GrOXyaHX6Jw/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/GrOXyaHX6Jw/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Devilish\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/c_Q-nnEUDr6IaStH73UcIWWcVkQ\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"uoidlYSOIpY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:29:45.000Z\",\n
+        \   \"channelId\": \"UCU3p8-ePb6v82qPxdpazZ-w\",\n    \"title\": \"あんだーてーる　G
+        サンズ\",\n    \"description\": \"Please comment in Japanese or English！！！ twitter
+        @haradebukun https://twitter.com/haradebukun 様々なゲームを配信する！\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/uoidlYSOIpY/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/uoidlYSOIpY/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/uoidlYSOIpY/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"はらでぶくん\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/MU3ju3LEt8k03YsjyKhw6y9koYM\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"ISS70ON_nVY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:26:23.000Z\",\n
+        \   \"channelId\": \"UC1Mss7_4oDaqz3rZcaO3m6Q\",\n    \"title\": \"Estudo
+        de Galátas 5 - Lei ou Graça\",\n    \"description\": \"Se você acredita que
+        este nosso trabalho é importante e deseja apoiar voluntariamente saiba que
+        toda ajuda por menor que seja é muito importante.\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/ISS70ON_nVY/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/ISS70ON_nVY/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/ISS70ON_nVY/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Alfredo Paulo\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/cUJtee2ksnnGvXjLzaHCb7ckkuw\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"jfP2ioNKguo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:24:30.000Z\",\n
+        \   \"channelId\": \"UC80FWuvIAtY-TRtYuDocfUw\",\n    \"title\": \"選挙の開票特番　厚木市議会選挙　ＮＨＫから国民を守る党\",\n
+        \   \"description\": \"参議院選挙 #ＮＨＫをぶっ壊す #令和の百姓一揆 受信料不払いに関する相談センター ０３－３６９６－０７５０
+        ☆参議院選挙に４１名が立...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/jfP2ioNKguo/default_live.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/jfP2ioNKguo/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/jfP2ioNKguo/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"立花孝志\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/k1OFMYDHiWNRV5D5sx3VAsHEM7E\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"ZayeZ6SVk8g\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:23:40.000Z\",\n
+        \   \"channelId\": \"UClGWikW5YcBAU1e49I0d8Lg\",\n    \"title\": \"BIOHAZARD
+        RE:2　タイムアタック　初見さん大歓迎！\",\n    \"description\": \"田中のゴリラが欲しい物  そしてモチベが上がるモノ
+        \ 】https://www.amazon.jp/hz/wishlist/ls/375IKM4PNG4N3?ref_=wl_share 【サブ垢】本当に気軽にフレンド...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/ZayeZ6SVk8g/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/ZayeZ6SVk8g/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/ZayeZ6SVk8g/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"田中の兄貴\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/ySWfF_mrmTdqVpWxIuFkWzrlDww\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"kJHGsO2mkO8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:24:51.000Z\",\n
+        \   \"channelId\": \"UCU_CgJqQIQHZKjyjn3Co2hA\",\n    \"title\": \"【スマブラSP】暇があればスマブラ配信！おてぃーむ【フレ戦orVIP】\",\n
+        \   \"description\": \"Support the stream: https://streamlabs.com/haru9 【僕からのお願い】
+        配信画面がおかしくなってたり、マイク音が小さかったり、音割れをしていたら教えて下...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/kJHGsO2mkO8/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/kJHGsO2mkO8/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/kJHGsO2mkO8/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"haru\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/A0fxN0LMawtCDJvRO1bfCgFafkA\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"WXchOy4Cj1w\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:25:20.000Z\",\n
+        \   \"channelId\": \"UC7Pq3Ko42YpkCB_Q4E981jw\",\n    \"title\": \"Children&#39;s
+        Nursery Rhymes &amp; Kids Songs | Baby Rhymes\",\n    \"description\": \"Kids
+        TV - The nursery rhymes channel for kindergarten aged children. These kids
+        songs are great for learning the alphabet, numbers, shapes, colors and lots
+        ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/WXchOy4Cj1w/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/WXchOy4Cj1w/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/WXchOy4Cj1w/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Kids TV - Nursery Rhymes And Baby Songs\",\n    \"liveBroadcastContent\":
+        \"live\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\":
+        \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/SR8rjf5V7KetoBNhhblBEaJ_ycU\\\"\",\n   \"id\":
+        {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Lpk6S44HWHw\"\n   },\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:25:13.000Z\",\n    \"channelId\":
+        \"UC8AfIcEdBj4NkKRnaE6RibQ\",\n    \"title\": \"[Destiny 2] Happy Bungie Day!!
+        野獣達の群れ(英雄) &amp; アクティビティグルグルまん (7/7) [LIVE]\",\n    \"description\": \"皆様ご覧いただきありがとうございます。
+        喜怒哀楽が激しくちょいちょい口の悪いゲスな野郎の 動画ですが、どうか生暖かい目でご覧ください。...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/Lpk6S44HWHw/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Lpk6S44HWHw/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Lpk6S44HWHw/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Shun-Stitch\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/RtCWCXaxLr5oj_ibTGURxUvs7IE\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"lqx2nZkOmTk\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:20:00.000Z\",\n
+        \   \"channelId\": \"UC80FWuvIAtY-TRtYuDocfUw\",\n    \"title\": \"選挙開票特番　厚木市議会議員　選挙\",\n
+        \   \"description\": \"参議院選挙 #ＮＨＫをぶっ壊す #令和の百姓一揆 受信料不払いに関する相談センター ０３－３６９６－０７５０
+        ☆参議院選挙に４１名が立...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/lqx2nZkOmTk/default_live.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/lqx2nZkOmTk/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/lqx2nZkOmTk/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"立花孝志\",\n    \"liveBroadcastContent\": \"upcoming\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/VlLUwm_Tum4ErpdLi-qwSw_NbZY\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"-3L4ga82VoE\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:20:28.000Z\",\n
+        \   \"channelId\": \"UCbtoWTIDkYIux4Xj5dWvmwA\",\n    \"title\": \"PS4フォールアウト76　クイーン3体倒そう\",\n
+        \   \"description\": \"まだまだ配信テスト行っています(^^)/\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/-3L4ga82VoE/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/-3L4ga82VoE/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/-3L4ga82VoE/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ゆう ゆう\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/aE6PWfft3_6J-CtJyrgxVV8vy7w\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"SRkMedSDrfw\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:19:45.000Z\",\n
+        \   \"channelId\": \"UCo9zMlWhre0LcDJ6BOoANIw\",\n    \"title\": \"今さらながらww2\",\n
+        \   \"description\": \"恵比寿藤田、ガリオの2人でCall of Duty WWIIのプレイ動画を中心に様々なコンテンツの動画を配信していきます
+        何卒よろしくお願い申し上げます.\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/SRkMedSDrfw/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/SRkMedSDrfw/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/SRkMedSDrfw/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"藤田恵比寿\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/LXyGPH_COTJkxmZKXS4cElgaVjM\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"gPa-BCwnqV4\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:20:28.000Z\",\n
+        \   \"channelId\": \"UCpdhdlId-0vH47-xno0at5g\",\n    \"title\": \"Euroformula
+        Open 2019 ROUND 5 HUNGARY - Hungaroring Race 2 ENG\",\n    \"description\":
+        \"\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/gPa-BCwnqV4/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/gPa-BCwnqV4/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/gPa-BCwnqV4/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"EuroFormula Open\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/WIC8HXZdHkne01IyUQVojpyvphM\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"TgKLEsCjBfo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:18:50.000Z\",\n
+        \   \"channelId\": \"UCDTFB91kT1FyXymEenpPNAQ\",\n    \"title\": \"アニメスタイル・K-Station【アニメ】\",\n
+        \   \"description\": \"アニメスタイル 毎週日曜日２１時～ 深夜アニメを中心に最新話の話をします。 谷本千尋 小松ゆうり 堂安一途.\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/TgKLEsCjBfo/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/TgKLEsCjBfo/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/TgKLEsCjBfo/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"KST GAMES\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/CjiKO_mI7P974LgmbYCqiPdMMrs\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"f8lmRaKWc10\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:17:23.000Z\",\n
+        \   \"channelId\": \"UCSwoCb9L7sJxL7dmDnicYEQ\",\n    \"title\": \"(直播)九龍反送中大遊行
+        廣東道不斷有市民斥責警方濫權違法\",\n    \"description\": \"(直播)九龍反送中大遊行廣東道不斷有市民斥責警方濫權違法.\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/f8lmRaKWc10/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/f8lmRaKWc10/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/f8lmRaKWc10/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"HK The Epoch Times\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/mB4qLRFmhPxAs_sOHj_9uyZCZX0\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"6C7EGeMwwNw\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:15:32.000Z\",\n
+        \   \"channelId\": \"UCDgkCTc58ceit8Bc2t1ITTA\",\n    \"title\": \"[Destiny2]_初見冠レイド行ってくる～♪\",\n
+        \   \"description\": \"動画の編集とかしてないけど見てね～♪ Twitterアカウント → https://twitter.com/xbikkubosux.\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/6C7EGeMwwNw/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/6C7EGeMwwNw/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/6C7EGeMwwNw/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"big boss\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/zokn3ma72eMD7KVYpuiH5BFQa28\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"gJL_YFetXt0\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:16:11.000Z\",\n
+        \   \"channelId\": \"UCyUcACP0ChBsKAPLH7x9sjA\",\n    \"title\": \"【荒野行動】BLT
+        トーナメント練習！21時から参加型ルーム #262 初見さん大歓迎 内容は概要欄みて\",\n    \"description\": \"BLTトーナメント練習
+        20時〜 V⌘ vs Aws 21時から参加型ルーム！ わちゃわちゃしましょう 試合形態 １０ｖｓ１０ 第一回戦 練習 RX vs V⌘ 配信...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/gJL_YFetXt0/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/gJL_YFetXt0/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/gJL_YFetXt0/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"タオルマンちゃんねる2\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Fy5CoMysuBfKbDmAKNUIxZ1ND4s\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"jauwquSz23M\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:12:11.000Z\",\n
+        \   \"channelId\": \"UC3_u-oRue94ebol_4hkXImg\",\n    \"title\": \"【荒野行動】#クインテット#荒野行動\",\n
+        \   \"description\": \"【荒野行動】team大罪.\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/jauwquSz23M/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/jauwquSz23M/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/jauwquSz23M/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"憤怒の罪Ψ
+        団長\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/sHKcOB8xX7cjxfsCJHREYmG7UA0\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"KcBnEykh1U8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:11:32.000Z\",\n
+        \   \"channelId\": \"UCZbC23bednAJf2jENVwLioQ\",\n    \"title\": \"［Destiny
+        2］雑談しながら山登り　初見さん・コメント歓迎！［参加ok］\",\n    \"description\": \"皆さん、やっはろー！！ゆきぽんです。みんなでゲームを楽しみましょう！フレンド申請はyukipon_AYN
+        にYouTubeの名前を載せて送って下さい！ Twitter...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/KcBnEykh1U8/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/KcBnEykh1U8/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/KcBnEykh1U8/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ゆきぽん\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/eNBduxUBYxZWd3AOKMba54629gA\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Z5weEixrGX0\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:11:58.000Z\",\n
+        \   \"channelId\": \"UCZCqgVOvVVl9hYnzRztRG9A\",\n    \"title\": \"Omlet Arcadeで荒野行動のストリームを見てください！\",\n
+        \   \"description\": \"Omlet Arcadeで荒野行動のストリームを見てください！ フォローして、もっとよく知ってください：
+        https://omlet.gg/profile/hiradon #OmletArcade #荒野行動.\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/Z5weEixrGX0/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Z5weEixrGX0/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/Z5weEixrGX0/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"どんひら\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/iWI-gq2-9gpBeM-YDhp96_GQ_cA\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"d5ch-bLyw6g\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:10:51.000Z\",\n
+        \   \"channelId\": \"UCxcXVSJALtQS5RL3s-mFIXQ\",\n    \"title\": \"[Destiny2]
+        悲哀レイド\",\n    \"description\": \"下手なりにがんばります！ 床ペロばかりですが、温かい目で見てください！ それといつも遊んでくださるフレさんありがとうございます.\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/d5ch-bLyw6g/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/d5ch-bLyw6g/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/d5ch-bLyw6g/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"トン トン\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/n2gF-osH9HyvgJF8YOTq8Yjglbs\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"k-lutNKa_4Q\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:10:28.000Z\",\n
+        \   \"channelId\": \"UCWpsIjbGTfj5m4MUX42SVOQ\",\n    \"title\": \"WE&#39;RE
+        GOING BACK HOME! • Pokemon 8bitbros Version Nuzlocke (3DS ROM HACK) • #09\",\n
+        \   \"description\": \"Pokemon ORAS ROM Hack 8bitbros version Click the link
+        to donate directly! Thank you for your support. https://streamlabs.com/GameboyLuke
+        Pokemon ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/k-lutNKa_4Q/default_live.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/k-lutNKa_4Q/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/k-lutNKa_4Q/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"GameboyLuke\",\n    \"liveBroadcastContent\": \"upcoming\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/THu975kChWvBSWLIgrlGhzlzXcc\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Ez4rYde6eWk\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:10:05.000Z\",\n
+        \   \"channelId\": \"UCaiqXU-CsX9N04seiz9kn5g\",\n    \"title\": \"【FF14】漆黒のヴィランズメインストーリーやります7日目　ネタバレに注意してください#204【Gaia】\",\n
+        \   \"description\": \"ネタバレを含む内容になってますお気を付けくださいm(_ _)m コルシア島のクエスト たぶん大罪食い討伐のところ
+        Support the stream: https://streamlabs.com/...\",\n    \"thumbnails\": {\n
+        \    \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/Ez4rYde6eWk/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Ez4rYde6eWk/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/Ez4rYde6eWk/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"ブルミン\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/vuBJ0RWv2mfWW8l_FRq4U7f9AVQ\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"q-UFdWX95c4\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:06:23.000Z\",\n
+        \   \"channelId\": \"UCpOjLndjOqMoffA-fr8cbKA\",\n    \"title\": \"【逆タピオカ】１粒の巨大タピオカにミルクティをいっぱい入れて飲みたい！！\",\n
+        \   \"description\": \"水溜りボンドのオールナイトニッポンは来週土曜日！ https://twitter.com/Ann_Since1967/status/1147076964638793728
+        動画がいいなと思っていただけたら高評価押...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/q-UFdWX95c4/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/q-UFdWX95c4/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/q-UFdWX95c4/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"水溜りボンド\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/U9iqjnRpwB151RjwzosPBVLCWH0\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"kngB2g6te6s\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:03:39.000Z\",\n
+        \   \"channelId\": \"UCu9MYfF0vosVcK38oNnnJxw\",\n    \"title\": \"Nursery
+        Rhymes &amp; Songs for Children | Baby Song | Kids Cartoon Videos\",\n    \"description\":
+        \"Farmees is a nursery rhymes channel for kindergarten children.These kids
+        songs are great for learning alphabets, numbers, shapes, colors and lot more.
+        We are ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/kngB2g6te6s/default_live.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/kngB2g6te6s/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/kngB2g6te6s/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Farmees - Nursery Rhymes And Kids Songs\",\n    \"liveBroadcastContent\":
+        \"live\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\":
+        \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/4ZVnqeD0q9kUJ1MyVUVrVpgg7WQ\\\"\",\n   \"id\":
+        {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"l9R3zP5k1cI\"\n   },\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:03:59.000Z\",\n    \"channelId\":
+        \"UCARQ8KGhFmgvbgqEnJenK7A\",\n    \"title\": \"Destiny2.誘導尋問\",\n    \"description\":
+        \"鉄拳7(メイン:ジュリア＆ロウ)、Division2、DESTINY2、、APEXの配信を気まぐれでしております(*•̀ᴗ•́*) よかったら、見ていってください(*'ω')\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/l9R3zP5k1cI/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/l9R3zP5k1cI/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/l9R3zP5k1cI/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"つねすぐ\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/WrjQUfbuyYSsN0IDlQR4v42z6UA\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"kWqhIlMJQ1w\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:00:28.000Z\",\n
+        \   \"channelId\": \"UCBqlbkelxtmrTCRTVISuzEA\",\n    \"title\": \"フェイチャンネル生放送【FF14】ファイナルファンタジー14
+        実況【光のおふぇいさん】漆黒のヴィランズ　2年ぶりの復活\",\n    \"description\": \"遊びに来てくれてありがとうございます！
+        一緒に仲良く楽しみましょう！ 良ければコチラからチャンネル登録お願いします！ (*´∀`*)ノ http://www....\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/kWqhIlMJQ1w/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/kWqhIlMJQ1w/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/kWqhIlMJQ1w/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"fei CHANNEL\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/0Ok7HAh6362wq9YF0UBS9NqZBd0\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"9uZXQ0wSqDo\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T12:00:16.000Z\",\n
+        \   \"channelId\": \"UCx1nAvtVDIsaGmCMSe8ofsQ\",\n    \"title\": \"ポケットモンスタープラチナVer普通にやる。9日目\",\n
+        \   \"description\": \"やぁ ▽うんこちゃん/加藤純一Twitter https://twitter.com/unkochan1234567
+        #加藤純一#ポケモン.\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/9uZXQ0wSqDo/default_live.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/9uZXQ0wSqDo/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/9uZXQ0wSqDo/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"jun channel\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/YiA1TJacA5KxGwQxrGuK4RtrqtU\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"1tyWRnujoX8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:56:04.000Z\",\n
+        \   \"channelId\": \"UCyUcACP0ChBsKAPLH7x9sjA\",\n    \"title\": \"【荒野行動】参加型ルーム
+        #262 初見さん大歓迎 内容は概要欄みて\",\n    \"description\": \"BLTトーナメント練習 20時〜 V⌘ vs Aws
+        21時から参加型ルーム！ わちゃわちゃしましょう 試合形態 １０ｖｓ１０ 第一回戦 練習 RX vs V⌘ 配信...\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/1tyWRnujoX8/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/1tyWRnujoX8/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/1tyWRnujoX8/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"タオルマンちゃんねる2\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/-cjHDI2NXJYi1vtqTfJK4kZKR2M\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"3ZsVQfvbCd4\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:52:57.000Z\",\n
+        \   \"channelId\": \"UC0gTm9oBpuVk7MS3Ftsw4iQ\",\n    \"title\": \"ከችግር ስወጣ
+        እኖራለሁ የሚል ሰው መስማት ያለበት ቭድዮ\",\n    \"description\": \"\",\n    \"thumbnails\":
+        {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/3ZsVQfvbCd4/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/3ZsVQfvbCd4/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/3ZsVQfvbCd4/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"Zinash and Florian\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/MUTngJ1AgccOCv_oWbwl5wtRetQ\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"7z9z5ceQKro\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:49:17.000Z\",\n
+        \   \"channelId\": \"UCPe3l2ztI9EwIUT1wGcwElg\",\n    \"title\": \"7/7荒野行動生放送やっていきますかねえ。#黒騎士Y\",\n
+        \   \"description\": \"サブチャンネルもよろしくです➡ https://www.youtube.com/channel/UCj39Wj1tFHMSXSe5F2LX4GQ?view_as=subscriber
+        □ラインスタンプでました➡ 「黒騎士Y」と ...\",\n    \"thumbnails\": {\n     \"default\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/7z9z5ceQKro/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/7z9z5ceQKro/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/7z9z5ceQKro/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"黒騎士Y\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/r6Daf6bncB6SpVfa7BbzdCMaxm4\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"I2XDfbj9ivU\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:44:28.000Z\",\n
+        \   \"channelId\": \"UCshCsg1YVKli8yBai-wa78w\",\n    \"title\": \"Disney
+        Channel&#39;s Cameron Boyce Dead at 20 - LIVE BREAKING NEWS COVERAGE\",\n
+        \   \"description\": \"Disney Channel star Cameron Boyce has died at the age
+        of 20. Get the latest details in our LIVE BREAKING NEWS COVERAGE. According
+        to Boyce's family, ...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/I2XDfbj9ivU/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/I2XDfbj9ivU/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/I2XDfbj9ivU/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Agenda-Free
+        TV\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/VBHasRlFJsWBkLdEoAuSLnE7FZI\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"hxw1ilf8934\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:34:31.000Z\",\n
+        \   \"channelId\": \"UCzSkhQm4_kE6vogiwm4-XLQ\",\n    \"title\": \"【FF14】ギャザクラ全カンスト後の金策\",\n
+        \   \"description\": \"ネタバレ注意！※ 【ツイッター】 https://twitter.com/jyo_channel 〇ニコ生と同時配信中
+        【これまでのじょー】 □未クリア=極ティターニア/極イノセ...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/hxw1ilf8934/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/hxw1ilf8934/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/hxw1ilf8934/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"じょー\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Awfoem-ob-F1f4EdBfid4_NkE3c\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"8Yzxo5sD4pw\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:28:49.000Z\",\n
+        \   \"channelId\": \"UC1N0_X0fuDHGXhIQqG7fx5Q\",\n    \"title\": \"#5 アパラチアを散歩中【Fallout76】\",\n
+        \   \"description\": \"7月の生配信はFallout76をメインで遊んでおります～ 一緒にアパラチアを冒険しましょう！ ※参加も歓迎しております！行き当たりばったりの配信...\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/8Yzxo5sD4pw/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/8Yzxo5sD4pw/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/8Yzxo5sD4pw/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"みちゃ\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1ZebGZVw1sTcmOfvaFxqSIuVrOI\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"PWINO_g08E8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:23:23.000Z\",\n
+        \   \"channelId\": \"UC0ukTYyEZP2rH0RIeg3snQw\",\n    \"title\": \"[モバイルレジェンド生放送]　モバレ（勝率47.5%）を使いたい。
+        \ こりんず-mobile legend live-\",\n    \"description\": \"主にモバレ、FF7の実況配信やってます！with柴犬くん。たまに歌ってみた。
+        実況画面はこりんずのプレイ画面です。 よかったらチャンネル登録し...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/PWINO_g08E8/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/PWINO_g08E8/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/PWINO_g08E8/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"こりんずまいける\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1-ga8S1XnMBTQVFoK1u6gIfwA6M\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"Q_IFNHNYJ2k\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T14:22:45.000Z\",\n
+        \   \"channelId\": \"UCq8jsNNTYP9NQnDFtfvn4lw\",\n    \"title\": \"\U0001F534\U0001F480【荒野行動】参加型5vs5ルーム配信＆プレゼント企画中！！！\U0001F534チャンネル登録するとホラーマンがでるよ！\",\n
+        \   \"description\": \"参加方法↓ ①チャンネル登録 ②荒野名をコメント ③ルームに入る 第4回プレゼント企画(ギフトカード1500分×2名)応募方法↓
+        １．チャンネル登...\",\n    \"thumbnails\": {\n     \"default\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/Q_IFNHNYJ2k/default.jpg\",\n      \"width\": 120,\n
+        \     \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/Q_IFNHNYJ2k/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/Q_IFNHNYJ2k/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ほらーまんっ!\",\n
+        \   \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\": \"youtube#searchResult\",\n
+        \  \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/FJDmlVopj9lT0AOQ-HslVOtve5w\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"oSKtHjpt8oY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:12:31.000Z\",\n
+        \   \"channelId\": \"UC2KQcfre8zygAGj8iYYatcQ\",\n    \"title\": \"PS4　オーバーウォッチ　srliven
+        overwatch　おおおお\",\n    \"description\": \"変な音はマイクが壊れてるのではなく特殊な腹式呼吸によって発生しています。\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/oSKtHjpt8oY/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/oSKtHjpt8oY/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/oSKtHjpt8oY/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"SRLIVEN a\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Q7Daiz1l2ie3H2LLuV1qKCuKCJA\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"PkIMs2cHOk8\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:05:34.000Z\",\n
+        \   \"channelId\": \"UCe-qA_wHg074GkMjIONSCYg\",\n    \"title\": \"18+ MistaRax
+        TV Livestream Speakers Corner July 7th 2019\",\n    \"description\": \"\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/PkIMs2cHOk8/default_live.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/PkIMs2cHOk8/mqdefault_live.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/PkIMs2cHOk8/hqdefault_live.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"MistaRax TV\",\n    \"liveBroadcastContent\": \"live\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/7pSkJ_XTPaVqJn3Yt88D-BI6rRs\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"r2j2ACffZkk\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T11:03:37.000Z\",\n
+        \   \"channelId\": \"UC_Sw2wZYvxWMjmJ23zJL1zQ\",\n    \"title\": \"【ARK Survival
+        Evolved】【barugeroMAP】わちゃわちゃする配信(^▽^)/\",\n    \"description\": \"のんびりARK生活(^▽^)/\",\n
+        \   \"thumbnails\": {\n     \"default\": {\n      \"url\": \"https://i.ytimg.com/vi/r2j2ACffZkk/default.jpg\",\n
+        \     \"width\": 120,\n      \"height\": 90\n     },\n     \"medium\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/r2j2ACffZkk/mqdefault.jpg\",\n      \"width\":
+        320,\n      \"height\": 180\n     },\n     \"high\": {\n      \"url\": \"https://i.ytimg.com/vi/r2j2ACffZkk/hqdefault.jpg\",\n
+        \     \"width\": 480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\":
+        \"hikonosuke ch\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n
+        \  \"kind\": \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/mOcP1m19u_H_HhMJn_wZ02cpHm8\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"0P3yVh35GNY\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-07T10:59:43.000Z\",\n
+        \   \"channelId\": \"UCqLwR-tL7_3r4m0VKv6HLSQ\",\n    \"title\": \"初心者が初心者のお手伝い♪（2キャラ目作製）\",\n
+        \   \"description\": \"[配信] 毎週金 21:00~ [動画] 下手くそなプレイ動画をアップする事も(σ･∀･)σｱﾙｱﾙ
+        【注意】 ライブ中のチャットにて、暴言や、卑猥な発言...\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/0P3yVh35GNY/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/0P3yVh35GNY/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/0P3yVh35GNY/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"ZERO
+        System\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  },\n  {\n   \"kind\":
+        \"youtube#searchResult\",\n   \"etag\": \"\\\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/pZRskLePh1-yRy2HbJKkKhxGyUM\\\"\",\n
+        \  \"id\": {\n    \"kind\": \"youtube#video\",\n    \"videoId\": \"gqeeJo8Nb8Y\"\n
+        \  },\n   \"snippet\": {\n    \"publishedAt\": \"2019-07-06T06:49:09.000Z\",\n
+        \   \"channelId\": \"UC2naOExy27J5Qz3SO-w6xkQ\",\n    \"title\": \"2019 Indoor
+        Cricket National Championships  - Open Mens GRAND FINAL\",\n    \"description\":
+        \"2019 Indoor Cricket National Championships - Open Mens GRAND FINAL QLD v
+        VIC Live from Casey Stadium, Victroria.\",\n    \"thumbnails\": {\n     \"default\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/gqeeJo8Nb8Y/default.jpg\",\n      \"width\":
+        120,\n      \"height\": 90\n     },\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/gqeeJo8Nb8Y/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     },\n     \"high\": {\n
+        \     \"url\": \"https://i.ytimg.com/vi/gqeeJo8Nb8Y/hqdefault.jpg\",\n      \"width\":
+        480,\n      \"height\": 360\n     }\n    },\n    \"channelTitle\": \"Cricket
+        Australia\",\n    \"liveBroadcastContent\": \"none\"\n   }\n  }\n ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 07 Jul 2019 14:23:43 GMT
+recorded_with: VCR 5.0.0

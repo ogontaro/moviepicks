@@ -3,14 +3,14 @@
 module Api
   module Entity
     class VideoEntity < ApplicationEntity
-      def initialize(channel_hash)
+      def initialize(video_hash)
         @video_hash = video_hash
       end
 
       def to_model
-        channel = Channel.find_or_initialize_by(channel_id: @video_hash["snippet"]["channel_id"])
-        channel.update modelized_hash
-        channel
+        video = Video.find_or_initialize_by(video_id: @video_hash["id"]["video_id"])
+        video.update modelized_hash
+        video
       end
 
       def to_hash

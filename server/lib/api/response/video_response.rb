@@ -19,7 +19,7 @@ module Api
 
       def result
         @response_body.items.map do |item|
-          Api::Entity::ChannelEntity.new item.as_json
+          Api::Entity::VideoEntity.new item.as_json
         end
       end
     end
