@@ -14,7 +14,7 @@ http_interactions:
       Accept-Encoding:
       - gzip,deflate
       Date:
-      - Tue, 02 Jul 2019 16:09:10 GMT
+      - Wed, 10 Jul 2019 16:54:45 GMT
       Content-Type:
       - application/x-www-form-urlencoded
   response:
@@ -23,9 +23,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 02 Jul 2019 16:09:10 GMT
+      - Wed, 10 Jul 2019 16:54:45 GMT
       Date:
-      - Tue, 02 Jul 2019 16:09:10 GMT
+      - Wed, 10 Jul 2019 16:54:45 GMT
       Cache-Control:
       - private, max-age=86400, must-revalidate, no-transform
       Etag:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - GSE
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="46,44,43,39"
+      - quic=":443"; ma=2592000; v="46,43,39"
       Transfer-Encoding:
       - chunked
     body:
@@ -158,5 +158,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Tue, 02 Jul 2019 16:09:11 GMT
+  recorded_at: Wed, 10 Jul 2019 16:54:45 GMT
 recorded_with: VCR 5.0.0

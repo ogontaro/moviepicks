@@ -2,7 +2,7 @@
 
 module Api
   module Response
-    class ChannelResponse < ApplicationResponse
+    class ChannelSearchResponse < ApplicationResponse
       attr_reader :response_body, :params, :page_token
 
       def initialize(response_body, part, order, page_token: nil, published_after: nil, published_before: nil)

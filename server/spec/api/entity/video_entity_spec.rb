@@ -3,7 +3,7 @@
 require "rails_helper"
 
 describe Api::Entity::VideoEntity do
-  let(:video) { Api::Repository::VideoRepository.all.result.first }
+  let(:video) { Api::Repository::VideoSearchRepository.all.result.first }
 
   describe "#to_model" do
     it "return model" do

@@ -3,7 +3,7 @@
 require "rails_helper"
 
 describe Api::Entity::ChannelEntity do
-  let(:channel) { Api::Repository::ChannelRepository.all.result.first }
+  let(:channel) { Api::Repository::ChannelSearchRepository.all.result.first }
 
   describe "#to_model" do
     it "return model" do
