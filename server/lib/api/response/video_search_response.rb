@@ -13,7 +13,7 @@ module Api
 
       def next
         @page_token = @response_body.next_page_token
-        @response_body = ApplicationResponse.client.list_searches(@params[:part], type: "video", page_token: @response_body.next_page_token, max_results: 50, published_after: params["published_after"], published_before: params["published_before"], order: @params[:order], region_code: "JP")
+        @response_body = ApplicationResponse.client.list_searches(@params[:part], type: "video", page_token: @response_body.next_page_token, max_results: 50, published_after: params["published_after"], published_before: params["published_before"], order: @params[:order], region_code: "JP", location: "140.526666,35.224144", location_radius: "1000km")
         self
       end
 
