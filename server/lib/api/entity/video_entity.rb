@@ -28,6 +28,8 @@ module Api
               result.store("description", value)
             when "published_at" then
               result.store("published_at", value)
+            when "channel_id" then
+              result.store("channel_id", value)
             end
             result
           end

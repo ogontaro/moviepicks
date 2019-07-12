@@ -35,6 +35,12 @@ describe Api::Entity::VideoEntity do
         expect(video.to_model.title.class).to eq String
       end
     end
+
+    it "returned model has channel_id" do
+      VCR.use_cassette "api/entity/video_entity/to_model", record: :new_episodes do
+        expect(video.to_model.channel_id.class).to eq String
+      end
+    end
   end
 
   describe "#to_hash" do
