@@ -3,7 +3,7 @@
 class CreateVideos < ActiveRecord::Migration[5.2]
   def change
     create_table :videos do |t|
-      t.references :channel, index: true, foreign_key: true
+      t.string :channel_id, index: true
       t.string :video_id, comment: "動画ID", null: false
       t.string :etag_id, comment: "etag ID", null: false
       t.string :title, comment: "動画のタイトル", null: false
@@ -18,5 +18,7 @@ class CreateVideos < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+
+    add_foreign_key :videos, :channels, column: :channel_id, primary_key: "channel_id"
   end
 end

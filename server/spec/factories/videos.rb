@@ -16,7 +16,7 @@
 #  view_count(動画の再生回数)                           :integer
 #  created_at                                           :datetime         not null
 #  updated_at                                           :datetime         not null
-#  channel_id                                           :bigint(8)
+#  channel_id                                           :string(255)
 #  etag_id(etag ID)                                     :string(255)      not null
 #  video_id(動画ID)                                     :string(255)      not null
 #
@@ -32,7 +32,7 @@
 #
 # Foreign Keys
 #
-#  fk_rails_...  (channel_id => channels.id)
+#  fk_rails_...  (channel_id => channels.channel_id)
 #
 
 FactoryBot.define do

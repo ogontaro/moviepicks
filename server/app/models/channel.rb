@@ -19,6 +19,7 @@
 #
 # Indexes
 #
+#  index_channels_on_channel_id        (channel_id)
 #  index_channels_on_comment_count     (comment_count)
 #  index_channels_on_published_at      (published_at)
 #  index_channels_on_subscriber_count  (subscriber_count)

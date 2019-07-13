@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.boolean "hidden_subscriber_count", comment: "チャンネル登録者数を公開表示するかどうかを指定します"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["channel_id"], name: "index_channels_on_channel_id"
     t.index ["comment_count"], name: "index_channels_on_comment_count"
     t.index ["published_at"], name: "index_channels_on_published_at"
     t.index ["subscriber_count"], name: "index_channels_on_subscriber_count"
@@ -64,7 +65,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
   end
 
   create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.bigint "channel_id"
+    t.string "channel_id"
     t.string "video_id", null: false, comment: "動画ID"
     t.string "etag_id", null: false, comment: "etag ID"
     t.string "title", null: false, comment: "動画のタイトル"
@@ -91,5 +92,5 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
   add_foreign_key "guide_categories_channels", "guide_categories", column: "guide_categories_id"
   add_foreign_key "video_categories_videos", "video_categories", column: "video_categories_id"
   add_foreign_key "video_categories_videos", "videos", column: "videos_id"
-  add_foreign_key "videos", "channels"
+  add_foreign_key "videos", "channels", primary_key: "channel_id"
 end

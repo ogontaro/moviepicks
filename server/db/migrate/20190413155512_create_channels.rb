@@ -3,7 +3,7 @@
 class CreateChannels < ActiveRecord::Migration[5.2]
   def change
     create_table :channels do |t|
-      t.string :channel_id, comment: "チャンネルID", null: false
+      t.string :channel_id, comment: "チャンネルID", index: true, null: false
       t.string :etag_id, comment: "etag ID", null: false
       t.string :title, comment: "チャンネルのタイトル", null: false
       t.string :description, comment: "チャンネルの説明"
