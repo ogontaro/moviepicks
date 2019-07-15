@@ -4,7 +4,7 @@ require "rails_helper"
 
 describe Api::Repository::GuideCategoryRepository do
   GuideCategoryRepository = Api::Repository::GuideCategoryRepository
-  GuideCategoryResponse= Api::Response::GuideCategoryResponse
+  GuideCategoryResponse = Api::Response::GuideCategoryResponse
 
   describe "all" do
     let(:categories) { GuideCategoryRepository.all }
