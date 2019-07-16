@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_05_06_162746) do
 
-  create_table "channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.string "channel_id", null: false, comment: "チャンネルID"
     t.string "etag_id", null: false, comment: "etag ID"
     t.string "title", null: false, comment: "チャンネルのタイトル"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.index ["view_count"], name: "index_channels_on_view_count"
   end
 
-  create_table "guide_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "guide_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.string "title", null: false, comment: "ガイドカテゴリのタイトル"
     t.string "guide_category_id", null: false, comment: "ガイドカテゴリID"
     t.string "channel_id", null: false, comment: "ガイドカテゴリ用チャンネルID"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "guide_categories_channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "guide_categories_channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.bigint "guide_categories_id"
     t.bigint "channels_id"
     t.datetime "created_at", null: false
@@ -48,14 +48,14 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.index ["guide_categories_id"], name: "index_guide_categories_channels_on_guide_categories_id"
   end
 
-  create_table "video_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "video_categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.string "title", null: false, comment: "ビデオカテゴリのタイトル"
     t.string "video_category_id", null: false, comment: "ビデオカテゴリID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "video_categories_videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "video_categories_videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.bigint "video_categories_id"
     t.bigint "videos_id"
     t.datetime "created_at", null: false
@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.index ["videos_id"], name: "index_video_categories_videos_on_videos_id"
   end
 
-  create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.string "channel_id"
     t.string "video_id", null: false, comment: "動画ID"
     t.string "etag_id", null: false, comment: "etag ID"
