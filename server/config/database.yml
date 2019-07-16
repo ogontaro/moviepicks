@@ -13,6 +13,7 @@
 default: &default
   adapter: mysql2
   encoding: utf8mb4
+  collation: utf8mb4_bin
   pool: <%= ENV['DATABASE_POOL'] || 5 %>
   host: <%= ENV['DATABASE_HOST'] || 'db' %>
   username: <%= ENV['DATABASE_USER'] || 'root' %>
