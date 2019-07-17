@@ -7,21 +7,12 @@ describe Api::Repository::ChannelRepository do
   ChannelResponse = Api::Response::ChannelResponse
 
   describe "all" do
-    let(:channels) { ChannelRepository.all }
+    let(:dummy_channel) { Api::Repository::ChannelSearchRepository.all(order: "viewcount").result.first.to_model }
+    let(:channels) { ChannelRepository.find(dummy_channel.channel_id) }
 
     it "return response" do
       VCR.use_cassette "api/repository/channel_repository/all", record: :new_episodes  do
         expect(channels.class).to eq ChannelResponse
-      end
-    end
-
-    context "when use id part" do
-      let(:channels) { ChannelRepository.all(part: "id") }
-
-      it "return response" do
-        VCR.use_cassette "api/repository/channel_repository/all", record: :new_episodes do
-          expect(channels.class).to eq ChannelResponse
-        end
       end
     end
   end

@@ -4,8 +4,8 @@ module Api
   module Repository
     class ChannelRepository < ApplicationRepository
       class << self
-        def find(part: "id,snippet", order: "date", page_token: nil, published_after: nil, published_before: nil)
-          channels = client.channel(part, type: "channel")
+        def find(channel_id, part: "id,snippet")
+          channels = client.list_channels(part, id: channel_id)
           Api::Response::ChannelResponse.new(channels)
         end
       end

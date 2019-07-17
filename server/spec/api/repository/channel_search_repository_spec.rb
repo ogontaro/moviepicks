@@ -62,5 +62,14 @@ describe Api::Repository::ChannelSearchRepository do
         end
       end
     end
+
+    context "when use order by viewcount" do
+      let(:channels) { ChannelSearchRepository.all(order: "viewcount") }
+      it "return response" do
+        VCR.use_cassette "api/repository/channel_search_repository/all", record: :new_episodes do
+          expect(channels.class).to eq ChannelSearchResponse
+        end
+      end
+    end
   end
 end
