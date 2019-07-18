@@ -5,7 +5,7 @@ require "rails_helper"
 describe Api::Response::ChannelSearchResponse do
   ChannelSearchRepository = Api::Repository::ChannelSearchRepository
   ChannelSearchResponse = Api::Response::ChannelSearchResponse
-  ChannelEntity = Api::Entity::ChannelEntity
+  ChannelSearchEntity = Api::Entity::ChannelSearchEntity
 
   let(:response) { Api::Repository::ChannelSearchRepository.all }
 
