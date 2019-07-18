@@ -10,3 +10,4 @@
 
 Api::Repository::GuideCategoryRepository.all.result.map(&:to_model).each(&:save)
 Api::Repository::ChannelSearchRepository.all(order: "viewcount").result.map(&:to_model).each(&:save)
+Channel.all.each { |channel| Api::Repository::ChannelRepository.find(channel.channel_id).result.first.to_model.save }
