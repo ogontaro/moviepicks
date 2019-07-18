@@ -13,7 +13,7 @@ describe Api::Response::ChannelSearchResponse do
     it "return Array of ChannelEntity" do
       VCR.use_cassette "api/response/channel_search_repository/result", record: :new_episodes do
         expect(response.result.class).to eq Array
-        expect(response.result.first.class).to eq ChannelEntity
+        expect(response.result.first.class).to eq ChannelSearchEntity
       end
     end
   end

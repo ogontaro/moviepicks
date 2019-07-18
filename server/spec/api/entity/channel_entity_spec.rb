@@ -3,7 +3,7 @@
 require "rails_helper"
 
 describe Api::Entity::ChannelEntity do
-  let(:channel) { Api::Repository::ChannelSearchRepository.all.result.first }
+  let(:channel) { Api::Repository::ChannelRepository.find("UC2GuoutVyegg6PUK88lLpjw").result.first } # 兄者弟者
 
   describe "#to_model" do
     it "return model" do
@@ -21,6 +21,12 @@ describe Api::Entity::ChannelEntity do
     it "returned model has title" do
       VCR.use_cassette "api/entity/channel_entity/to_model", record: :new_episodes do
         expect(channel.to_model.title.class).to eq String
+      end
+    end
+
+    it "returned model has country" do
+      VCR.use_cassette "api/entity/channel_entity/to_model", record: :new_episodes do
+        expect(channel.to_model.country.class).to eq String
       end
     end
 

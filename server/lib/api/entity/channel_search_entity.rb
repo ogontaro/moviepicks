@@ -2,13 +2,13 @@
 
 module Api
   module Entity
-    class ChannelEntity < ApplicationEntity
+    class ChannelSearchEntity < ApplicationEntity
       def initialize(channel_hash)
         @channel_hash = channel_hash
       end
 
       def to_model
-        channel = Channel.find_or_initialize_by(channel_id: @channel_hash["id"])
+        channel = Channel.find_or_initialize_by(channel_id: @channel_hash["id"]["channel_id"])
         channel.update modelized_hash
         channel
       end
@@ -33,7 +33,7 @@ module Api
             end
             result
           end
-          hash.store("channel_id", @channel_hash["id"])
+          hash.store("channel_id", @channel_hash["id"]["channel_id"])
           hash.store("etag_id", @channel_hash["etag"])
           hash
         end
