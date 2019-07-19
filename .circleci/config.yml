@@ -34,9 +34,11 @@ jobs:
           cache_key_prefix: v2-bundle
       - run: bundle exec rake db:create db:schema:load
       - run: mkdir ~/rspec
-      - run: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
+      - run: bundle exec rspec --profile 10  --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
       - store_test_results:
           path: ~/rspec
+      - store_artifacts:
+          path: ~/project/server/coverage
 
 workflows:
   test:

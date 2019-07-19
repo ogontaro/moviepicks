@@ -15,6 +15,7 @@ gem "puma", "~> 3.11"
 gem "sidekiq"
 
 group :test do
+  gem "simplecov", require: false
   gem "vcr"
   gem "webmock"
 end
