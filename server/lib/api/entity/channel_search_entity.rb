@@ -24,8 +24,6 @@ module Api
             case key
             when "title" then
               result.store("title", value)
-            when "country" then
-              result.store("country", value)
             when "description" then
               result.store("description", value)
             when "published_at" then
