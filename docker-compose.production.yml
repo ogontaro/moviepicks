@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  server: 
+    build:
+      dockerfile: ../containers/server/Dockerfile
+      context: ./server
+    image: moviepicks/server:${COMMIT_ID}
+    environment:
+      - RAILS_ENV=production
+  worker:  
+    build:
+      dockerfile: ../containers/server/Dockerfile
+      context: ./server
+    container_name: moviepicks_worker
+    image: moviepicks/worker:${COMMIT_ID}
+    environment:
+      - RAILS_ENV=production
