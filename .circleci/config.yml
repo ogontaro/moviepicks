@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   ruby-orbs: sue445/ruby-orbs@1.4.3
+  docker: circleci/docker@0.5.13
 
 executors:
   server:
@@ -41,6 +42,27 @@ jobs:
           path: ~/project/server/coverage
 
 workflows:
-  test:
+  test_and_build-image:
     jobs:
       - rspec
+      - docker/publish:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - rspec
+          image: ogontaro/moviepicks-server
+          path: ~/project/server
+          dockerfile: ../containers/server/production/Dockerfile 
+      - docker/publish:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - rspec
+          image: ogontaro/moviepicks-worker
+          path: ~/project/server
+          dockerfile: ../containers/server/production/Dockerfile 
+
