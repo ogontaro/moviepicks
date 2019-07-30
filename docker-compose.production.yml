@@ -8,6 +8,7 @@ services:
     image: moviepicks/server:${COMMIT_ID}
     environment:
       - RAILS_ENV=production
+      - SECRET_KEY_BASE=dummy_secret_keybase
   worker:  
     build:
       dockerfile: ../containers/server/Dockerfile
