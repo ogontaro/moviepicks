@@ -7,11 +7,13 @@ describe Api::Repository::GuideCategoryRepository do
   GuideCategoryResponse = Api::Response::GuideCategoryResponse
 
   describe "all" do
-    let(:categories) { GuideCategoryRepository.all }
+    let(:response) { GuideCategoryRepository.all }
+    let(:categories) { response.result }
 
     it "return response" do
       VCR.use_cassette "api/repository/guide_category_repository/all", record: :new_episodes do
-        expect(categories.class).to eq GuideCategoryResponse
+        expect(response.class).to eq GuideCategoryResponse
+        expect(categories.class).to eq Array
       end
     end
   end
