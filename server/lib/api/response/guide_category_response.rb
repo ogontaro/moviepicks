@@ -3,16 +3,13 @@
 module Api
   module Response
     class GuideCategoryResponse < ApplicationResponse
-      attr_reader :response_body
-
-      def initialize(response_body)
-        @response_body = response_body
+      def initialize(**params)
+        @params = params
+        @response = ApplicationResponse.client.list_guide_categories(@params[:part], hl: @params[:hl], region_code: @params[:region_code])
       end
 
       def result
-        @response_body.items.map do |item|
-          Api::Entity::GuideCategoryEntity.new({ id: item.id }.merge item.snippet.to_h)
-        end
+        @response.items.map { |item| Api::Entity::GuideCategoryEntity.new({ id: item.id }.merge item.snippet.to_h) }
       end
     end
   end

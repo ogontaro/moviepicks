@@ -5,7 +5,7 @@ module Api
     class GuideCategoryRepository < ApplicationRepository
       class << self
         def all
-          Api::Response::GuideCategoryResponse.new client.list_guide_categories("id,snippet", region_code: "JP", hl: "ja-JP")
+          Api::Response::GuideCategoryResponse.new(part: "id,snippet", region_code: "JP", hl: "ja-JP")
         end
       end
     end

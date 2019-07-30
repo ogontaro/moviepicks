@@ -3,16 +3,15 @@
 module Api
   module Response
     class ChannelResponse < ApplicationResponse
-      attr_reader :response_body, :params, :page_token
+      attr_reader :page_token
 
-      def initialize(response_body)
-        @response_body = response_body
+      def initialize(**params)
+        @params = params
+        @response = ApplicationResponse.client.list_searches(@params[:part], channel_id: params[:channel_id])
       end
 
       def result
-        @response_body.items.map do |item|
-          Api::Entity::ChannelEntity.new item.as_json
-        end
+        @response.items.map { |item| Api::Entity::ChannelEntity.new item.as_json }
       end
     end
   end
