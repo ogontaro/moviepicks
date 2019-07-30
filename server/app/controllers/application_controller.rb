@@ -3,6 +3,10 @@
 class ApplicationController < ActionController::API
   before_action :set_raven_context
 
+  def health
+    render json: { status: "SUCCESS" }
+  end
+
   private
 
   def set_raven_context
