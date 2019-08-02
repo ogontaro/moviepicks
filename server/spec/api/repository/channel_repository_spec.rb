@@ -14,7 +14,7 @@ describe Api::Repository::ChannelRepository do
     it "return response" do
       VCR.use_cassette "api/repository/channel_repository/all", record: :new_episodes  do
         expect(response.class).to eq ChannelResponse
-        expect(result.class).to eq Array
+        expect(channel.class).to eq Array
       end
     end
   end

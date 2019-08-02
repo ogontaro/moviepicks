@@ -8,32 +8,25 @@ describe Api::Response::VideoSearchResponse do
   VideoEntity = Api::Entity::VideoEntity
 
   let(:response) { VideoSearchRepository.all }
+  let(:videos) { response.result }
 
   describe "#result" do
     it "return Array of VideoEntity" do
       VCR.use_cassette "api/response/video_search_repository/result", record: :new_episodes do
         expect(response.result.class).to eq Array
-        expect(response.result.first.class).to eq VideoEntity
+        expect(videos.first.class).to eq VideoEntity
       end
     end
   end
 
   describe "#next" do
-    before {
-      VCR.use_cassette "api/response/video_search_repository/next", record: :new_episodes do
-        response.next
-      end
-    }
+    let(:response) { VideoSearchRepository.all.next }
 
-    it "get next page" do
+    it "return next page" do
       VCR.use_cassette "api/response/video_search_repository/next", record: :new_episodes do
         expect(response.class).to eq VideoSearchResponse
-      end
-    end
-
-    it "has page token" do
-      VCR.use_cassette "api/response/video_search_repository/next", record: :new_episodes do
-        expect(response.page_token).not_to be nil
+        expect(response.params[:page_token]).not_to eq nil
+        expect(videos.first.class).to eq VideoEntity
       end
     end
   end

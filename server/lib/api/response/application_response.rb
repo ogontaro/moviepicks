@@ -3,6 +3,8 @@
 module Api
   module Response
     class ApplicationResponse
+      attr_reader :params
+
       class << self
         def client
           Google::Apis::YoutubeV3::YouTubeService.new.tap do |youtube|

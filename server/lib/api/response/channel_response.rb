@@ -7,7 +7,7 @@ module Api
 
       def initialize(**params)
         @params = params
-        @response = ApplicationResponse.client.list_searches(@params[:part], channel_id: params[:channel_id])
+        @response = ApplicationResponse.client.list_channels(@params[:part], id: @params[:channel_id])
       end
 
       def result

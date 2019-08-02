@@ -20,7 +20,7 @@ module Api
       end
 
       def next
-        @params[:next_page_token] = @response.next_page_token
+        @params[:page_token] = @response.next_page_token
         ChannelSearchResponse.new @params
       end
 
