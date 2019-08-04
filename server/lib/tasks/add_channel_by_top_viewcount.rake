@@ -6,11 +6,12 @@ namespace :channels do
     channels = Api::Repository::ChannelSearchRepository.all(order: "viewcount")
 
     loop do
-      channels.result.each do |channel_entity|
-        channel = channel_entity.to_model
-        Api::Repository::ChannelRepository.find(channel.channel_id).result.first.to_model.save
+      channels.result.each do |c|
+        channel = Api::Repository::ChannelRepository.find(c.to_hash[:channel_id]).result.first
+        Raven.extra_context(channel: channel.to_hash.to_hash)
+        channel.to_model.save
       end
-      channels.next
+      channels = channels.next
     end
   end
 end
