@@ -47,5 +47,5 @@ ENTRYPOINT [ \
     "prehook", "ruby -v", "--", \
     "prehook", "rm -f tmp/pids/server.pid", \
     "prehook", "bundle install -j4 --clean --quiet", "--", \
-    "prehook", "bundle exec rails db:setup", "--" \
+    "prehook", "bundle exec rails db:migrate", "--" \
     ]
