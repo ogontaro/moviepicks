@@ -3,7 +3,20 @@
 namespace :channels do
   desc ""
   task add_channel_by_top_viewcount: :environment do
-    channels = Api::Repository::ChannelSearchRepository.all(order: "viewcount")
+    STDOUT.sync = true
+
+    channels = nil
+    loop do
+      begin
+        channels = Api::Repository::ChannelSearchRepository.all(order: "viewcount")
+        break
+      rescue Google::Apis::ClientError => e
+        throw e unless e.status_code == 403
+        puts "sleep 1h for Goole API rate limit"
+        sleep 60 * 60
+      end
+    end
+
 
     loop do
       channels.result.each do |c|
@@ -21,8 +34,8 @@ namespace :channels do
         channels = channels.next
       rescue Google::Apis::ClientError => e
         throw e unless e.status_code == 403
-        puts "sleep 1h"
-        sleep 60 * 60 # 1hまつ
+        puts "sleep 1h for Goole API rate limit"
+        sleep 60 * 60
         next
       end
     end
