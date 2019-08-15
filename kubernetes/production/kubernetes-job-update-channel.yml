@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: update-channel
+spec:
+  completions: 1
+  parallelism: 1
+  backoffLimit: 10
+  template:
+    spec:
+      containers:
+        - name: update-channel
+          image: "ogontaro/moviepicks-server:5aca5d65a3a239817536539f4e0165ba2b5ebb32"
+          args: ["bundle", "exec", "rails", "channels:add_channel_by_top_viewcount"]
+          env: 
+            - name: RAILS_ENV
+              value: production
+            - name: REDIS_URL
+              value: redis://production-redis:6379
+          envFrom:
+          - configMapRef:
+              name: moviepicks-production
+      restartPolicy: Never
