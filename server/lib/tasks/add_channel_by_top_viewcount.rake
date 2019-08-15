@@ -12,7 +12,7 @@ namespace :channels do
         break
       rescue Google::Apis::ClientError => e
         throw e unless e.status_code == 403
-        puts "sleep 1h for Goole API rate limit"
+        puts "sleep 1h for Youtube API rate limit"
         sleep 60 * 60
       end
     end
@@ -34,7 +34,7 @@ namespace :channels do
         channels = channels.next
       rescue Google::Apis::ClientError => e
         throw e unless e.status_code == 403
-        puts "sleep 1h for Goole API rate limit"
+        puts "sleep 1h for Youtube API rate limit"
         sleep 60 * 60
         next
       end
