@@ -42,7 +42,6 @@ namespace :channels do
       throw e unless e.status_code == 403
       puts "wait 1h for Youtube API Rate Limit"
       sleep 60 * 60
-      break
     end
     response
   end
