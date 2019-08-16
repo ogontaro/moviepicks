@@ -9,13 +9,13 @@ module Api
         @params = params
         @response = ApplicationResponse.client.list_searches(
           @params[:part],
-            type: "channel",
-            max_results: @params[:max_results],
-            order: @params[:order],
-            region_code: @params[:region_code],
-            page_token: @params[:page_token],
-            published_after: @params[:published_after],
-            published_before: @params[:published_before]
+          type: "channel",
+          max_results: @params[:max_results],
+          order: @params[:order],
+          region_code: @params[:region_code],
+          page_token: @params[:page_token],
+          published_after: @params[:published_after],
+          published_before: @params[:published_before]
         )
       end
 
