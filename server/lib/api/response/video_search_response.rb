@@ -8,7 +8,7 @@ module Api
       def initialize(**params)
         @params = params
         @response = ApplicationResponse.client.list_searches(
-            @params[:part],
+          @params[:part],
             type: "video",
             max_results: @params[:max_results],
             order: @params[:order],

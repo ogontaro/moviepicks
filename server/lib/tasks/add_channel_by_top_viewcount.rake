@@ -36,15 +36,13 @@ namespace :channels do
   def try_api_with_wait(&api_action)
     response = nil
     loop do
-      begin
-        response = api_action.call
-        break
-      rescue Google::Apis::ClientError => e
-        throw e unless e.status_code == 403
-        puts "wait 1h for Youtube API Rate Limit"
-        sleep 60 * 60
-        break
-      end
+      response = api_action.call
+      break
+    rescue Google::Apis::ClientError => e
+      throw e unless e.status_code == 403
+      puts "wait 1h for Youtube API Rate Limit"
+      sleep 60 * 60
+      break
     end
     response
   end
