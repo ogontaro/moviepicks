@@ -7,27 +7,16 @@ namespace :channels do
 
     channels = try_api_with_wait { Api::Repository::ChannelSearchRepository.all(order: "viewcount") }
 
-    channels.result.each do |c|
-      Raven.extra_context(c: c.to_hash)
-      channel_entity = try_api_with_wait { Api::Repository::ChannelRepository.find(c.to_model.channel_id).result&.first }
-      next if channel_entity.blank?
-
-      Raven.extra_context(channel: channel_entity.to_hash)
-      channel = channel_entity.to_model
-      channel.save
-      puts "channel: name: #{channel.title}, id:#{channel.channel_id} created"
-    end
-
     loop do
       channels.result.each do |c|
         Raven.extra_context(c: c.to_hash)
         channel_entity = try_api_with_wait { Api::Repository::ChannelRepository.find(c.to_model.channel_id).result&.first }
-        if channel_entity.present?
-          Raven.extra_context(channel: channel_entity.to_hash)
-          channel = channel_entity.to_model
-          channel.save
-          puts "channel: name: #{channel.title}, id:#{channel.channel_id} created"
-        end
+        next if channel_entity.blank?
+
+        Raven.extra_context(channel: channel_entity.to_hash)
+        channel = channel_entity.to_model
+        channel.save
+        puts "channel: name: #{channel.title}, id:#{channel.channel_id} created"
       end
       channels = try_api_with_wait { channels.next }
     end
