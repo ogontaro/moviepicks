@@ -33,6 +33,18 @@ module Api
             end
             result
           end
+          hash.merge! (@channel_hash["statistics"].inject(Hash.new) do |result, item|
+            key, value = item
+            case key
+            when "view_count" then
+              result.store("view_count", value)
+            when "subscriber_count" then
+              result.store("subscriber_count", value)
+            when "video_count" then
+              result.store("video_count", value)
+            end
+            result
+          end)
           hash.store("channel_id", @channel_hash["id"])
           hash.store("etag_id", @channel_hash["etag"])
           hash

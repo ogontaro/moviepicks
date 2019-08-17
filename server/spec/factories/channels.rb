@@ -6,12 +6,14 @@
 #
 #  id                                                                            :bigint(8)        not null, primary key
 #  comment_count(チャンネルのコメント数)                                         :integer
-#  description(チャンネルの説明)                                                 :string(255)
+#  country(チャンネルの登録国)                                                   :string(255)
+#  description(チャンネルの説明)                                                 :text(65535)
 #  hidden_subscriber_count(チャンネル登録者数を公開表示するかどうかを指定します) :boolean
 #  published_at(チャンネルの開設日)                                              :datetime         not null
-#  subscriber_count(チャンネルの登録者数)                                        :integer
+#  subscriber_count(チャンネルの登録者数)                                        :bigint(8)
 #  title(チャンネルのタイトル)                                                   :string(255)      not null
-#  view_count(チャンネルの再生回数)                                              :integer
+#  video_count(チャンネルのビデオ数)                                             :bigint(8)
+#  view_count(チャンネルの再生回数)                                              :bigint(8)
 #  created_at                                                                    :datetime         not null
 #  updated_at                                                                    :datetime         not null
 #  channel_id(チャンネルID)                                                      :string(255)      not null
@@ -23,6 +25,7 @@
 #  index_channels_on_comment_count     (comment_count)
 #  index_channels_on_published_at      (published_at)
 #  index_channels_on_subscriber_count  (subscriber_count)
+#  index_channels_on_video_count       (video_count)
 #  index_channels_on_view_count        (view_count)
 #
 

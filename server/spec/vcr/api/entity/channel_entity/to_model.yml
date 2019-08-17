@@ -328,4 +328,108 @@ http_interactions:
         }
     http_version: 
   recorded_at: Fri, 02 Aug 2019 03:36:13 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id=UC2GuoutVyegg6PUK88lLpjw&key=<GOOGLE_API_KEY>&part=id,snippet,statistics
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - unknown/0.0.0 google-api-ruby-client/0.30.6 Linux/4.9.184-linuxkit (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Sat, 17 Aug 2019 14:26:06 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sat, 17 Aug 2019 14:26:07 GMT
+      Date:
+      - Sat, 17 Aug 2019 14:26:07 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"0UM_wBUsFuT6ekiIlwaHvyqc80M/wg-BjXfgIVI9Z-YVVmU2IZkETog"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43,39"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#channelListResponse",
+         "etag": "\"0UM_wBUsFuT6ekiIlwaHvyqc80M/wg-BjXfgIVI9Z-YVVmU2IZkETog\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#channel",
+           "etag": "\"0UM_wBUsFuT6ekiIlwaHvyqc80M/sMQpR4kowDoITGl5SGAlfd_tTiU\"",
+           "id": "UC2GuoutVyegg6PUK88lLpjw",
+           "snippet": {
+            "title": "兄者弟者",
+            "description": "★最新投稿情報はツイッターで！《@Otojya》https://twitter.com/otojya \n\n▼2BRO.関連チャンネルリスト\n【兄者弟者チャンネルTOP】\nhttps://www.youtube.com/user/norunine \n\n【アニドラチャンネルTOP】\nhttps://www.youtube.com/channel/UCzSi25RJfQNtQzXNYQUAcNA \n\n【おついち TubeチャンネルTOP】\nhttps://www.youtube.com/user/afuramazda0826 \n\nWelcome to 2BRO. Official YouTube Channel!!\n弟者と兄者のエンターテイメントチャンネルへようこそ！\n\nTo Game publisher!\nWe never ask Steam Key by e-mail. So please don't send it. Thank you.",
+            "customUrl": "norunine",
+            "publishedAt": "2010-05-05T06:48:07.000Z",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/a/AGF-l78UFB1pQ2APq7T2vy_R43z-7QS23wAZXNMxCA=s88-c-k-c0xffffffff-no-rj-mo",
+              "width": 88,
+              "height": 88
+             },
+             "medium": {
+              "url": "https://yt3.ggpht.com/a/AGF-l78UFB1pQ2APq7T2vy_R43z-7QS23wAZXNMxCA=s240-c-k-c0xffffffff-no-rj-mo",
+              "width": 240,
+              "height": 240
+             },
+             "high": {
+              "url": "https://yt3.ggpht.com/a/AGF-l78UFB1pQ2APq7T2vy_R43z-7QS23wAZXNMxCA=s800-c-k-c0xffffffff-no-rj-mo",
+              "width": 800,
+              "height": 800
+             }
+            },
+            "localized": {
+             "title": "兄者弟者",
+             "description": "★最新投稿情報はツイッターで！《@Otojya》https://twitter.com/otojya \n\n▼2BRO.関連チャンネルリスト\n【兄者弟者チャンネルTOP】\nhttps://www.youtube.com/user/norunine \n\n【アニドラチャンネルTOP】\nhttps://www.youtube.com/channel/UCzSi25RJfQNtQzXNYQUAcNA \n\n【おついち TubeチャンネルTOP】\nhttps://www.youtube.com/user/afuramazda0826 \n\nWelcome to 2BRO. Official YouTube Channel!!\n弟者と兄者のエンターテイメントチャンネルへようこそ！\n\nTo Game publisher!\nWe never ask Steam Key by e-mail. So please don't send it. Thank you."
+            },
+            "country": "JP"
+           },
+           "statistics": {
+            "viewCount": "2556090987",
+            "commentCount": "0",
+            "subscriberCount": "2619688",
+            "hiddenSubscriberCount": false,
+            "videoCount": "5070"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sat, 17 Aug 2019 14:26:07 GMT
 recorded_with: VCR 5.0.0

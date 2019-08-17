@@ -19,9 +19,10 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.string "country", comment: "チャンネルの登録国"
     t.text "description", comment: "チャンネルの説明"
     t.datetime "published_at", null: false, comment: "チャンネルの開設日"
-    t.integer "view_count", comment: "チャンネルの再生回数"
+    t.bigint "view_count", comment: "チャンネルの再生回数"
     t.integer "comment_count", comment: "チャンネルのコメント数"
     t.integer "subscriber_count", comment: "チャンネルの登録者数"
+    t.integer "video_count", comment: "チャンネルのビデオ数"
     t.boolean "hidden_subscriber_count", comment: "チャンネル登録者数を公開表示するかどうかを指定します"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
     t.index ["comment_count"], name: "index_channels_on_comment_count"
     t.index ["published_at"], name: "index_channels_on_published_at"
     t.index ["subscriber_count"], name: "index_channels_on_subscriber_count"
+    t.index ["video_count"], name: "index_channels_on_video_count"
     t.index ["view_count"], name: "index_channels_on_view_count"
   end
 

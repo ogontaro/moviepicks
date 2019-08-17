@@ -41,6 +41,24 @@ describe Api::Entity::ChannelEntity do
         expect(channel.to_model.title.class).to eq String
       end
     end
+
+    it "returned model has video_count" do
+      VCR.use_cassette "api/entity/channel_entity/to_model", record: :new_episodes do
+        expect(channel.to_model.view_count.class).to eq Integer
+      end
+    end
+
+    it "returned model has subscriber_count" do
+      VCR.use_cassette "api/entity/channel_entity/to_model", record: :new_episodes do
+        expect(channel.to_model.subscriber_count.class).to eq Integer
+      end
+    end
+
+    it "returned model has video_count" do
+      VCR.use_cassette "api/entity/channel_entity/to_model", record: :new_episodes do
+        expect(channel.to_model.video_count.class).to eq Integer
+      end
+    end
   end
 
   describe "#to_hash" do
