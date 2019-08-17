@@ -19,6 +19,11 @@ RUN wget -q https://github.com/progrium/entrykit/releases/download/v${ENTRYKIT_V
     chmod +x /bin/entrykit && \
     entrykit --symlink
 
+ENV DOCKERIZE_VERSION v0.6.1
+RUN wget -q https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
+    && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
+    && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+
 ENV USER_NAME moviepicks
 ENV USER_HOME /home/${USER_NAME}
 ENV APP_HOME ${USER_HOME}/project
@@ -46,5 +51,5 @@ ENTRYPOINT [ \
     "prehook", "ruby -v", "--", \
     "prehook", "rm -f tmp/pids/server.pid", "--", \
     "prehook", "bundle install -j4 --clean --quiet", "--", \
-    "prehook", "bundle exec rails db:setup", "--" \
+    "prehook", "dockerize -wait tcp://db:3306 -timeout 30s", "--" \
     ]
