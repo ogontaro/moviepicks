@@ -16,7 +16,7 @@ namespace :channels do
         Raven.extra_context(channel: channel_entity.to_hash)
         channel = channel_entity.to_model
         channel.save
-        puts "channel: name: #{channel.title}, id:#{channel.channel_id} created"
+        puts "title: #{channel.title}, id:#{channel.channel_id} created"
       end
       channels = try_api_with_wait { channels.next }
     end
