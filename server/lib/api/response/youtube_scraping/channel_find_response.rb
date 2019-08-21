@@ -14,7 +14,7 @@ module Api
 
         def channel_json
           response_about = ChannelFindResponse.client.channel_about(params[:channel_id])
-          channel_about_doc = Oga.parse_html(response_about.body.force_encoding 'UTF-8')
+          channel_about_doc = Oga.parse_html(response_about.body.force_encoding "UTF-8")
           result = {
             channel_id: params[:channel_id],
             title: channel_about_doc.xpath("/html/head/meta[@name='title']/@content")&.first&.text,
@@ -26,7 +26,7 @@ module Api
           }
 
           response_search = ChannelFindResponse.client.search(result[:title])
-          channel_search_doc = Oga.parse_html(response_search.body.force_encoding 'UTF-8')
+          channel_search_doc = Oga.parse_html(response_search.body.force_encoding "UTF-8")
           result.merge!(
             video_count: channel_search_doc.xpath("//*[@class='item-section']/li[1]/div/div[2]/div[1]/ul/li")&.first&.text&.gsub(/[^\d]/, "")
           )

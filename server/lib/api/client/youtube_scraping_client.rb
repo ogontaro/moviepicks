@@ -15,7 +15,7 @@ module Api
       end
 
       def search(query)
-        Faraday.get("https://www.youtube.com/results?search_query=#{URI.encode(query)}")
+        Faraday.get("https://www.youtube.com/results?search_query=#{CGI.escape(query)}")
       end
     end
   end
