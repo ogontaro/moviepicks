@@ -10,7 +10,7 @@ namespace :channels do
     loop do
       channels.result.each do |c|
         Raven.extra_context(c: c.to_hash)
-        channel_entity = try_api_with_wait { Api::Repository::ChannelRepository.find(c.to_model.channel_id).result&.first }
+        channel_entity = try_api_with_wait { Api::Repository::YoutubeScraping::ChannelRepository.find(c.to_model.channel_id).result }
         next if channel_entity.blank?
 
         Raven.extra_context(channel: channel_entity.to_hash)

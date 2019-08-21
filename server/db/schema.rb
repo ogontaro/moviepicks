@@ -14,11 +14,11 @@ ActiveRecord::Schema.define(version: 2019_05_06_162746) do
 
   create_table "channels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin", force: :cascade do |t|
     t.string "channel_id", null: false, comment: "チャンネルID"
-    t.string "etag_id", null: false, comment: "etag ID"
-    t.string "title", null: false, comment: "チャンネルのタイトル"
+    t.string "etag_id", comment: "etag ID"
+    t.string "title", comment: "チャンネルのタイトル"
     t.string "country", comment: "チャンネルの登録国"
     t.text "description", comment: "チャンネルの説明"
-    t.datetime "published_at", null: false, comment: "チャンネルの開設日"
+    t.datetime "published_at", comment: "チャンネルの開設日"
     t.bigint "view_count", comment: "チャンネルの再生回数"
     t.integer "comment_count", comment: "チャンネルのコメント数"
     t.integer "subscriber_count", comment: "チャンネルの登録者数"
