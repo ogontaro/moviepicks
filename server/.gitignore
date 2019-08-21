@@ -27,6 +27,9 @@
 
 # Ignore dotenv
 .env
+.env.develop
+.env.staging
+.env.production
 
 # Ignore coverage
 /coverage
