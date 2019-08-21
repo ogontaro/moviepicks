@@ -47,6 +47,7 @@ GEM
     annotate (2.7.5)
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 13.0)
+    ansi (1.5.0)
     arel (9.0.0)
     ast (2.4.0)
     bootsnap (1.4.4)
@@ -130,6 +131,9 @@ GEM
     nio4r (2.4.0)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    oga (2.15)
+      ast
+      ruby-ll (~> 2.1)
     os (1.0.1)
     parallel (1.17.0)
     parser (2.6.3.0)
@@ -215,6 +219,9 @@ GEM
       rubocop (>= 0.60.0)
     ruby-debug-ide (0.7.0)
       rake (>= 0.8.1)
+    ruby-ll (2.1.2)
+      ansi
+      ast
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
@@ -271,10 +278,12 @@ DEPENDENCIES
   debase
   dotenv-rails
   factory_bot_rails
+  faraday
   google-api-client (~> 0.11)
   graphql_rails
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4, < 0.6.0)
+  oga
   puma (~> 3.11)
   rails (~> 5.2.2, >= 5.2.2.1)
   rspec-rails (~> 3.8)
