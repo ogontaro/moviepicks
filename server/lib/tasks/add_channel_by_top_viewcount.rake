@@ -17,7 +17,7 @@ namespace :channels do
         channel = channel_entity.to_model
         channel.save
         puts "title: #{channel.title}, id:#{channel.channel_id} created"
-        sleep 5
+        sleep 2
       end
       channels = try_api_with_wait { channels.next }
     end
