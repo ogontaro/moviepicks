@@ -12,7 +12,7 @@ module Api
           response = nil
           begin
             response = Api::Entity::YoutubeScraping::ChannelEntity.new channel_json
-          rescue Api::Client::YoutubeScrapingClientError => e
+          rescue Api::Client::YoutubeScrapingClientError
             return nil
           end
           response

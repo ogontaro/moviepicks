@@ -19,12 +19,11 @@ module Api
       end
 
       private
-
-      def request_with_error_handle(&faraday_request)
-        response = faraday_request.call
-        raise YoutubeScrapingClientError.new(response) unless response.success?
-        response
-      end
+        def request_with_error_handle(&faraday_request)
+          response = faraday_request.call
+          raise YoutubeScrapingClientError.new(response) unless response.success?
+          response
+        end
     end
   end
 end
