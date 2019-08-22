@@ -9,6 +9,16 @@ module Api
         end
 
         def result
+          response = nil
+          begin
+            response = Api::Entity::YoutubeScraping::ChannelEntity.new channel_json
+          rescue Api::Client::YoutubeScrapingClientError => e
+            return nil
+          end
+          response
+        end
+
+        def result!
           Api::Entity::YoutubeScraping::ChannelEntity.new channel_json
         end
 
