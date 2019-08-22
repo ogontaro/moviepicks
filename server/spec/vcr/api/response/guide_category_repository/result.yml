@@ -8,13 +8,13 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - unknown/0.0.0 google-api-ruby-client/0.30.6 Linux/4.9.184-linuxkit (gzip)
+      - unknown/0.0.0 google-api-ruby-client/0.30.8 Linux/4.9.184-linuxkit (gzip)
       Accept:
       - "*/*"
       Accept-Encoding:
       - gzip,deflate
       Date:
-      - Fri, 02 Aug 2019 03:29:51 GMT
+      - Thu, 22 Aug 2019 16:55:58 GMT
       Content-Type:
       - application/x-www-form-urlencoded
   response:
@@ -23,13 +23,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 02 Aug 2019 03:29:51 GMT
+      - Thu, 22 Aug 2019 16:55:58 GMT
       Date:
-      - Fri, 02 Aug 2019 03:29:51 GMT
+      - Thu, 22 Aug 2019 16:55:58 GMT
       Cache-Control:
       - private, max-age=86400, must-revalidate, no-transform
       Etag:
-      - '"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/P881p9iYehXQypdySsQKQA3NomI"'
+      - '"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/P881p9iYehXQypdySsQKQA3NomI"'
       Vary:
       - Origin
       - X-Origin
@@ -54,11 +54,11 @@ http_interactions:
       string: |
         {
          "kind": "youtube#guideCategoryListResponse",
-         "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/P881p9iYehXQypdySsQKQA3NomI\"",
+         "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/P881p9iYehXQypdySsQKQA3NomI\"",
          "items": [
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/P8eUmynuwkuIIZLtAUSGyjcu9PQ\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/P8eUmynuwkuIIZLtAUSGyjcu9PQ\"",
            "id": "GCQmVzdCBvZiBZb3VUdWJl",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -67,7 +67,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/ImrTevQ0UvryyOmvjPFFu85AKCU\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/ImrTevQ0UvryyOmvjPFFu85AKCU\"",
            "id": "GCQ3JlYXRvciBvbiB0aGUgUmlzZQ",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -76,7 +76,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/93JsvyokVHN6cP0sYlzqnzPFKDA\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/93JsvyokVHN6cP0sYlzqnzPFKDA\"",
            "id": "GCTXVzaWM",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -85,7 +85,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1OyfJk3bHzQfwdB3mrAq5Hlkyrs\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/1OyfJk3bHzQfwdB3mrAq5Hlkyrs\"",
            "id": "GCQ29tZWR5",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -94,7 +94,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/nPXKSW3gvbE_IGO9kQ0pVWWIX3E\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/nPXKSW3gvbE_IGO9kQ0pVWWIX3E\"",
            "id": "GCRmlsbSAmIEVudGVydGFpbm1lbnQ",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -103,7 +103,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/v6NbgmZzRUydPytEQJyAMT9_-ng\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/v6NbgmZzRUydPytEQJyAMT9_-ng\"",
            "id": "GCR2FtaW5n",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -112,7 +112,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/H8dJkufrPVbVrXxR9lHnk7Wmkts\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/H8dJkufrPVbVrXxR9lHnk7Wmkts\"",
            "id": "GCQmVhdXR5ICYgRmFzaGlvbg",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -121,7 +121,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/6i9c51-zWxagd6XuXLzdq0sN0wk\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/6i9c51-zWxagd6XuXLzdq0sN0wk\"",
            "id": "GCU3BvcnRz",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -130,7 +130,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/gRB8nQk5gRYsCtZYQAPUufs9ElM\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/gRB8nQk5gRYsCtZYQAPUufs9ElM\"",
            "id": "GCVGVjaA",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -139,7 +139,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/NECk71Pm-g9olSeb8f65ze2ElOc\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/NECk71Pm-g9olSeb8f65ze2ElOc\"",
            "id": "GCQ29va2luZyAmIEhlYWx0aA",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -148,7 +148,7 @@ http_interactions:
           },
           {
            "kind": "youtube#guideCategory",
-           "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/1h9cSZcqdB4MFYtPldcLpsLf0yk\"",
+           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/1h9cSZcqdB4MFYtPldcLpsLf0yk\"",
            "id": "GCTmV3cyAmIFBvbGl0aWNz",
            "snippet": {
             "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
@@ -158,5 +158,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Fri, 02 Aug 2019 03:29:51 GMT
+  recorded_at: Thu, 22 Aug 2019 16:55:58 GMT
 recorded_with: VCR 5.0.0
