@@ -24,6 +24,7 @@ describe Api::Repository::ChannelSearchRepository do
         VCR.use_cassette "api/repository/channel_search_repository/all", record: :new_episodes do
           expect(response.class).to eq ChannelSearchResponse
           expect(channels.class).to eq Array
+          expect(channels.first.to_model.class).to eq Channel
         end
       end
     end

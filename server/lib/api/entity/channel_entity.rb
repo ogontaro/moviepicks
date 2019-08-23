@@ -19,7 +19,8 @@ module Api
 
       private
         def modelized_hash
-          hash = @channel_hash["snippet"].inject(Hash.new) do |result, item|
+          hash = {}
+          hash.merge!(@channel_hash["snippet"].inject(Hash.new) do |result, item|
             key, value = item
             case key
             when "title" then
@@ -33,7 +34,9 @@ module Api
             end
             result
           end
-          hash.merge! (@channel_hash["statistics"].inject(Hash.new) do |result, item|
+          ) if @channel_hash["snippet"]
+
+          hash.merge!(@channel_hash["statistics"].inject(Hash.new) do |result, item|
             key, value = item
             case key
             when "view_count" then
@@ -44,7 +47,8 @@ module Api
               result.store("video_count", value)
             end
             result
-          end)
+          end
+          ) if @channel_hash["statistics"]
           hash.store("channel_id", @channel_hash["id"])
           hash.store("etag_id", @channel_hash["etag"])
           hash
