@@ -1,4 +1,4 @@
-FROM ruby:2.6.5-slim
+FROM ruby:2.7.1-slim
 
 ENV LANG="C.UTF-8" \
     RAILS_ENV="development" \
