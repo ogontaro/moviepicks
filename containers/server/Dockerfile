@@ -50,6 +50,7 @@ EXPOSE 3000
 ENTRYPOINT [ \
     "prehook", "ruby -v", "--", \
     "prehook", "rm -f tmp/pids/server.pid", "--", \
-    "prehook", "bundle install -j4 --clean --quiet", "--", \
-    "prehook", "dockerize -wait tcp://db:3306 -timeout 30s", "--" \
+    "prehook", "bundle install -j4 --quiet", "--", \
+    "prehook", "dockerize -wait tcp://db:3306 -timeout 30s", "--", \
+    "prehook", "bundle exec rails db:create db:migrate", "--" \
     ]
